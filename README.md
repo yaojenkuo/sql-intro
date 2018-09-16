@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+## SQL 及 R 語言的資料分析實戰
 
-You can use the [editor on GitHub](https://github.com/yaojenkuo/sql-intro/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### 簡介
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在[台灣大學資訊工程學系資訊系統訓練班](https://train.csie.ntu.edu.tw/train/)所開設的 資料分析入門：SQL 假日專題班課程網頁，課程時數 10 小時。
 
-### Markdown
+### 上課互動工具（頻道代碼 G271）
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<https://www.sli.do/>
 
-```markdown
-Syntax highlighted code block
+### 繳交作業表單
 
-# Header 1
-## Header 2
-### Header 3
+<https://goo.gl/forms/ed1JMiJHqLBkizui1>
 
-- Bulleted
-- List
+### 評分標準
 
-1. Numbered
-2. List
+- 70 分即可獲得證書
+- 作業繳交期限為課程結束後一週內，如遇長假期（春節、連假）則順延
 
-**Bold** and _Italic_ and `Code` text
+|編號|連結|分數|
+|作業 1|[Intro to SQL for Data Science](https://www.datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
+|作業 2|[Learn SQL](https://www.codecademy.com/learn/learn-sql)|70|
+|作業 3|[SQL: Table Transformation](https://www.codecademy.com/learn/sql-table-transformation)|70|
+|作業 4|[SQL: Analyzing Business Metrics](https://www.codecademy.com/learn/sql-analyzing-business-metrics)|70|
 
-[Link](url) and ![Image](src)
-```
+### 課程大綱
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- [SQL 基礎](https://yaojenkuo.io/sql-intro/sql_basic.slides.html)
+- [SQL 應用](https://yaojenkuo.io/sql-intro/sql_mid.slides.html)
+- [SQL 進階](https://yaojenkuo.io/sql-intro/sql_advanced.slides.html)
+- [建立外部應用程式與資料庫的連結](https://yaojenkuo.io/sql-intro/establish_connection.slides.html)
 
-### Jekyll Themes
+### 延伸閱讀
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yaojenkuo/sql-intro/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- [SQL 深入淺出](http://www.books.com.tw/products/0010391205)
+- [DataInPoint](https://medium.com/datainpoint)
 
-### Support or Contact
+### 近期上課錄影
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [297 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVSgTwTQHhJrieWL0KnQihq)
+- [296 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWXOlIhArlyLzPgtUcGo-v4)
+- [295 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuW_FJ8CG1qfPVR6VgurRrTE)
+- [292 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUG7fWiaqzjs8HIfoKkrPz9)
+- [289 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuXEWJm9TADaFDcInLmbc48K)
+- [283 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX5pQmw0xGzsCmyIolwJGRk)
+- [282 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUe-CQMzCK7us5_rRHgEhPe)
+- [281 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuW8Baw4NYZc6VjKBt7kySXH)
