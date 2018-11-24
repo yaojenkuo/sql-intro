@@ -38,7 +38,7 @@
 ### 延伸閱讀
 
 - [SQL 深入淺出](http://www.books.com.tw/products/0010391205)
-- [DataInPoint](https://medium.com/datainpoint)
+- [進擊的資料科學：向資料庫查詢](https://www.datainpoint.com/data-science-in-action/03-querying-databases.html)
 
 ### 近期上課錄影
 
