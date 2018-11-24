@@ -8,13 +8,14 @@
 
 <https://www.facebook.com/groups/csietrainds/>
 
-### 上課互動工具（頻道代碼 G271）
+### 上課互動工具
 
 <https://www.sli.do/>
 
 ### 繳交作業表單
 
-<https://goo.gl/forms/ed1JMiJHqLBkizui1>
+- [306 期假日專題班](https://goo.gl/forms/vZjTVshMTb8OUQDB3)
+- [304 期假日專題班](https://goo.gl/forms/ed1JMiJHqLBkizui1)
 
 ### 評分標準
 
