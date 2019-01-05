@@ -14,6 +14,7 @@
 
 ### 繳交作業表單
 
+- [307 期假日專題班](https://goo.gl/forms/YYPCYgBF8SmprI223)
 - [306 期假日專題班](https://goo.gl/forms/vZjTVshMTb8OUQDB3)
 - [304 期假日專題班](https://goo.gl/forms/ed1JMiJHqLBkizui1)
 
@@ -42,6 +43,7 @@
 
 ### 近期上課錄影
 
+- [307 期假日專題班]()
 - [306 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX_BaRr4XP-NK_KuDVDtRgp)
 - [304 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWUc2L9OVp1zFnbNPk5T959)
 - [297 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVSgTwTQHhJrieWL0KnQihq)
