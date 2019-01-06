@@ -40,10 +40,10 @@
 
 - [SQL 深入淺出](http://www.books.com.tw/products/0010391205)
 - [進擊的資料科學：向資料庫查詢](https://www.datainpoint.com/data-science-in-action/03-querying-databases.html)
-
+ne
 ### 近期上課錄影
 
-- [307 期假日專題班]()
+- [307 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuXqBl6rRUKy5wxXbkx34YJ2)
 - [306 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX_BaRr4XP-NK_KuDVDtRgp)
 - [304 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWUc2L9OVp1zFnbNPk5T959)
 - [297 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVSgTwTQHhJrieWL0KnQihq)
