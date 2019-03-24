@@ -14,6 +14,7 @@
 
 ### 繳交作業表單
 
+- [310 期假日專題班](https://forms.gle/Mbz9FFVoVfJZhGbz6)
 - [307 期假日專題班](https://goo.gl/forms/YYPCYgBF8SmprI223)
 - [306 期假日專題班](https://goo.gl/forms/vZjTVshMTb8OUQDB3)
 - [304 期假日專題班](https://goo.gl/forms/ed1JMiJHqLBkizui1)
@@ -24,10 +25,9 @@
 - 作業繳交期限為課程結束後一週內，如遇長假期（春節、連假）則順延
 
 |編號|連結|分數|
-|作業 1|[Intro to SQL for Data Science](https://www.datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
-|作業 2|[Learn SQL](https://www.codecademy.com/learn/learn-sql)|70|
-|作業 3|[SQL: Table Transformation](https://www.codecademy.com/learn/sql-table-transformation)|70|
-|作業 4|[SQL: Analyzing Business Metrics](https://www.codecademy.com/learn/sql-analyzing-business-metrics)|70|
+|作業 1|[Learn SQL](https://www.codecademy.com/learn/learn-sql)|70|
+|作業 2|[SQL: Table Transformation](https://www.codecademy.com/learn/sql-table-transformation)|70|
+|作業 3|[SQL: Analyzing Business Metrics](https://www.codecademy.com/learn/sql-analyzing-business-metrics)|70|
 
 ### 課程大綱
 
@@ -43,6 +43,7 @@
 
 ### 近期上課錄影
 
+- [310 期假日專題班]()
 - [307 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuXqBl6rRUKy5wxXbkx34YJ2)
 - [306 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX_BaRr4XP-NK_KuDVDtRgp)
 - [304 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWUc2L9OVp1zFnbNPk5T959)
