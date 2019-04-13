@@ -35,6 +35,7 @@
 - [SQL 應用](https://yaojenkuo.io/sql-intro/sql_mid.slides.html)
 - [SQL 進階](https://yaojenkuo.io/sql-intro/sql_advanced.slides.html)
 - [建立外部應用程式與資料庫的連結](https://yaojenkuo.io/sql-intro/establish_connection.slides.html)
+- [建立一個本機端 SQLite 資料庫](building-a-sqlite-locally.slides.html)
 
 ### 延伸閱讀
 
