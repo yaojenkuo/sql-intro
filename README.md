@@ -45,7 +45,7 @@
 
 ### 近期上課錄影
 
-- [311 期假日專題班]()
+- [311 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU3AAqgvJuuLtoH1lzzzZ3Q)
 - [310 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWKmW5Ct1Y9LIKj8szmFxqJ)
 - [307 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuXqBl6rRUKy5wxXbkx34YJ2)
 - [306 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX_BaRr4XP-NK_KuDVDtRgp)
