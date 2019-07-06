@@ -14,6 +14,7 @@
 
 ### 繳交作業表單
 
+- [318 期假日專題班]()
 - [312 期假日專題班](https://forms.gle/qwxnfnpQQGRKmzcd9)
 - [311 期假日專題班](https://forms.gle/1wvkbiPEqCwPKZa4A)
 - [310 期假日專題班](https://forms.gle/Mbz9FFVoVfJZhGbz6)
@@ -33,11 +34,12 @@
 
 ### 課程大綱
 
-- [SQL 基礎](https://yaojenkuo.io/sql-intro/sql_basic.slides.html)
-- [SQL 應用](https://yaojenkuo.io/sql-intro/sql_mid.slides.html)
-- [SQL 進階](https://yaojenkuo.io/sql-intro/sql_advanced.slides.html)
-- [建立外部應用程式與資料庫的連結](https://yaojenkuo.io/sql-intro/establish_connection.slides.html)
-- [建立一個本機端 SQLite 資料庫](building-a-sqlite-locally.slides.html)
+- [關於](00-about.slides.html)
+- [起步走](01-getting-started.slides.html)
+- [基礎 SQL 資料庫查詢](02-basic-sql-queries.slides.html)
+- [進階 SQL 資料庫查詢]()
+- [基礎 SQL 資料庫表格處理]()
+- [SQL 資料庫與資料科學程式語言]()
 
 ### 延伸閱讀
 
@@ -46,6 +48,7 @@
 
 ### 近期上課錄影
 
+- [318 期假日專題班]()
 - [312 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVGhDhnELeF6pfu5P9xgeDV)
 - [311 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU3AAqgvJuuLtoH1lzzzZ3Q)
 - [310 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWKmW5Ct1Y9LIKj8szmFxqJ)
