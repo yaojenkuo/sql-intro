@@ -13524,7 +13524,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">WHERE &#25944;&#36848;&#65306;&#32879;&#38598;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">population</span> <span class="k">FROM</span> <span class="n">world</span>
+<h2 id="WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">WHERE &#25944;&#36848;&#65306;&#32879;&#38598;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">population</span> <span class="k">FROM</span> <span class="n">world</span>
   <span class="k">WHERE</span> <span class="n">name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Brazil&#39;</span><span class="p">,</span> <span class="s1">&#39;Russia&#39;</span><span class="p">,</span> <span class="s1">&#39;India&#39;</span><span class="p">,</span> <span class="s1">&#39;China&#39;</span><span class="p">);</span>
 </pre></div>
 
@@ -13534,7 +13535,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#20132;&#38598;">WHERE &#25944;&#36848;&#65306;&#20132;&#38598;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#20132;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">area</span> <span class="k">FROM</span> <span class="n">world</span>
+<h2 id="WHERE-&#25944;&#36848;&#65306;&#20132;&#38598;">WHERE &#25944;&#36848;&#65306;&#20132;&#38598;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#20132;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">area</span> <span class="k">FROM</span> <span class="n">world</span>
   <span class="k">WHERE</span> <span class="n">area</span> <span class="o">&gt;</span> <span class="mi">250000</span> <span class="k">AND</span>
         <span class="n">area</span> <span class="o">&lt;</span> <span class="mi">300000</span><span class="p">;</span>
 </pre></div>
@@ -13545,7 +13547,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;">WHERE &#25944;&#36848;<a class="anchor-link" href="#WHERE-&#25944;&#36848;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">area</span> <span class="k">FROM</span> <span class="n">world</span>
+<h2 id="WHERE-&#25944;&#36848;&#36939;&#31639;&#31526;&#65306;BETWEEN">WHERE &#25944;&#36848;&#36939;&#31639;&#31526;&#65306;<code>BETWEEN</code><a class="anchor-link" href="#WHERE-&#25944;&#36848;&#36939;&#31639;&#31526;&#65306;BETWEEN">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">area</span> <span class="k">FROM</span> <span class="n">world</span>
   <span class="k">WHERE</span> <span class="n">area</span> <span class="k">BETWEEN</span> <span class="mi">250000</span> <span class="k">AND</span> <span class="mi">300000</span><span class="p">;</span>
 </pre></div>
 
@@ -13558,7 +13561,8 @@ a.anchor-link {
 <h2 id="WHERE-&#25944;&#36848;&#65306;&#19981;&#31561;&#26044;">WHERE &#25944;&#36848;&#65306;&#19981;&#31561;&#26044;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#19981;&#31561;&#26044;">&#182;</a></h2><ul>
 <li>使用 <code>!=</code> 運算子</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
        <span class="n">continent</span>
     <span class="k">FROM</span> <span class="n">world</span>
     <span class="k">WHERE</span> <span class="n">continent</span> <span class="o">!=</span> <span class="s1">&#39;Asia&#39;</span> <span class="k">OR</span>
@@ -13585,7 +13589,8 @@ a.anchor-link {
 <h2 id="WHERE-&#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;">WHERE &#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;">&#182;</a></h2><ul>
 <li>選出國名中有 <code>land</code> 的國家名</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span>
+<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span>
     <span class="k">FROM</span> <span class="n">world</span>
     <span class="k">WHERE</span> <span class="n">name</span> <span class="k">LIKE</span> <span class="s1">&#39;%land%&#39;</span><span class="p">;</span>
 </pre></div>
@@ -13596,10 +13601,11 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;NOT">WHERE &#25944;&#36848;&#65306;NOT<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;NOT">&#182;</a></h2><ul>
+<h2 id="WHERE-&#25944;&#36848;&#65306;NOT-&#33287;&#23567;&#25324;&#34399;">WHERE &#25944;&#36848;&#65306;NOT &#33287;&#23567;&#25324;&#34399;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;NOT-&#33287;&#23567;&#25324;&#34399;">&#182;</a></h2><ul>
 <li>反轉 WHERE 條件</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
        <span class="n">continent</span>
     <span class="k">FROM</span> <span class="n">world</span>
     <span class="k">WHERE</span> <span class="n">continent</span> <span class="k">NOT</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Asia&#39;</span><span class="p">,</span> <span class="s1">&#39;Europe&#39;</span><span class="p">,</span> <span class="s1">&#39;North America&#39;</span><span class="p">);</span>
@@ -13614,25 +13620,8 @@ a.anchor-link {
 <h2 id="WHERE-&#25944;&#36848;&#65306;&#23567;&#25324;&#34399;">WHERE &#25944;&#36848;&#65306;&#23567;&#25324;&#34399;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#23567;&#25324;&#34399;">&#182;</a></h2><ul>
 <li>利用小括號達到類似四則運算中的優先效果</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
-       <span class="n">continent</span><span class="p">,</span>
-       <span class="n">population</span>
-    <span class="k">FROM</span> <span class="n">world</span>
-    <span class="k">WHERE</span> <span class="p">(</span><span class="n">continent</span> <span class="o">=</span> <span class="s1">&#39;Asia&#39;</span> <span class="k">OR</span> 
-           <span class="n">continent</span> <span class="o">=</span> <span class="s1">&#39;Europe&#39;</span><span class="p">)</span> <span class="k">AND</span>
-          <span class="n">population</span> <span class="o">&gt;</span> <span class="mi">10000000</span><span class="p">;</span>
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#23567;&#25324;&#34399;">WHERE &#25944;&#36848;&#65306;&#23567;&#25324;&#34399;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#23567;&#25324;&#34399;">&#182;</a></h2><ul>
-<li>利用小括號達到類似四則運算中的優先效果</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
        <span class="n">continent</span><span class="p">,</span>
        <span class="n">population</span>
     <span class="k">FROM</span> <span class="n">world</span>
@@ -13667,7 +13656,8 @@ a.anchor-link {
 <li>預設遞增排序：<code>ASC</code></li>
 <li>找出人口數最少的前 10 個國家（<code>LIMIT</code> 敘述）</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
        <span class="n">population</span>
   <span class="k">FROM</span> <span class="n">world</span>
   <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">population</span>
@@ -13685,7 +13675,8 @@ a.anchor-link {
 <li>改為遞減排序：<code>DESC</code></li>
 <li>找出人口數最多的前 10 個國家（<code>LIMIT</code> 敘述）</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
        <span class="n">population</span> <span class="k">DESC</span>
   <span class="k">FROM</span> <span class="n">world</span>
   <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">population</span>
