@@ -14,7 +14,7 @@
 
 ### 繳交作業表單
 
-- [318 期假日專題班]()
+- [318 期假日專題班](https://forms.gle/i8RBd66JvqA2d6iZ6)
 - [312 期假日專題班](https://forms.gle/qwxnfnpQQGRKmzcd9)
 - [311 期假日專題班](https://forms.gle/1wvkbiPEqCwPKZa4A)
 - [310 期假日專題班](https://forms.gle/Mbz9FFVoVfJZhGbz6)
@@ -37,9 +37,9 @@
 - [關於](00-about.slides.html)
 - [起步走](01-getting-started.slides.html)
 - [基礎 SQL 資料庫查詢](02-basic-sql-queries.slides.html)
-- [進階 SQL 資料庫查詢]()
-- [基礎 SQL 資料庫表格處理]()
-- [SQL 資料庫與資料科學程式語言]()
+- [進階 SQL 資料庫查詢](03-advanced-sql-queries.slides.html)
+- 基礎 SQL 資料庫表格處理
+- SQL 資料庫與資料科學程式語言
 
 ### 延伸閱讀
 
@@ -48,7 +48,7 @@
 
 ### 近期上課錄影
 
-- [318 期假日專題班]()
+- [318 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuW-eod7wIisXVGkjn1-Bbxa)
 - [312 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVGhDhnELeF6pfu5P9xgeDV)
 - [311 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU3AAqgvJuuLtoH1lzzzZ3Q)
 - [310 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWKmW5Ct1Y9LIKj8szmFxqJ)
