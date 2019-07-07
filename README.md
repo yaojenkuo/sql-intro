@@ -4,6 +4,8 @@
 
 這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在[台灣大學資訊工程學系資訊系統訓練班](https://train.csie.ntu.edu.tw/train/)所開設的資料分析入門 SQL 假日專題班課程網頁，課程時數 10 小時。
 
+Contact me: <tony@kyosei.ai>
+
 ### Facebook 群組
 
 <https://www.facebook.com/groups/csietrainds/>
