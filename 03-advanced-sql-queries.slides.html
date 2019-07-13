@@ -13586,11 +13586,203 @@ a.anchor-link {
 <h2 id="UNION"><code>UNION</code><a class="anchor-link" href="#UNION">&#182;</a></h2>
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="UNION-&#26159;&#22402;&#30452;&#21512;&#20341;&#36039;&#26009;&#24235;&#34920;&#26684;&#30340;&#25805;&#20316;"><code>UNION</code> &#26159;&#22402;&#30452;&#21512;&#20341;&#36039;&#26009;&#24235;&#34920;&#26684;&#30340;&#25805;&#20316;<a class="anchor-link" href="#UNION-&#26159;&#22402;&#30452;&#21512;&#20341;&#36039;&#26009;&#24235;&#34920;&#26684;&#30340;&#25805;&#20316;">&#182;</a></h2><p>轉置美國的統計數字</p>
+<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
+<span class="k">SELECT</span> <span class="n">area</span> <span class="k">AS</span> <span class="n">stats</span>
+    <span class="k">FROM</span> <span class="n">world</span>
+    <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;United States&#39;</span>
+<span class="k">UNION</span>
+<span class="k">SELECT</span> <span class="n">population</span> <span class="k">AS</span> <span class="n">stats</span>
+    <span class="k">FROM</span> <span class="n">world</span>
+    <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;United States&#39;</span>
+<span class="k">UNION</span>
+<span class="k">SELECT</span> <span class="n">gdp</span> <span class="k">AS</span> <span class="n">stats</span>
+    <span class="k">FROM</span> <span class="n">world</span>
+    <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;United States&#39;</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="JOIN"><code>JOIN</code><a class="anchor-link" href="#JOIN">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="JOIN-&#25551;&#36848;"><code>JOIN</code> &#25551;&#36848;<a class="anchor-link" href="#JOIN-&#25551;&#36848;">&#182;</a></h2><ul>
+<li>也許是關聯式資料庫最重要的技巧！</li>
+<li>聯結的種類：<ul>
+<li>Inner Join（內部聯結）</li>
+<li>Left Join（左外部聯結）</li>
+<li>Right Join（右外部聯結）</li>
+<li>Full Join（全外部聯結）（MySQL 不支援）</li>
+<li>...etc.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#37325;&#35201;&#30340;&#21517;&#35422;">&#37325;&#35201;&#30340;&#21517;&#35422;<a class="anchor-link" href="#&#37325;&#35201;&#30340;&#21517;&#35422;">&#182;</a></h2><ul>
+<li>PK(Primary Key)：一個表格用來標註獨立觀測值的欄位</li>
+<li>FK(Foreign Key)：用來與其他表格連結的欄位</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#33287;&#38651;&#24433;&#36039;&#35338;&#30456;&#38364;&#30340;&#34920;&#26684;">&#33287;&#38651;&#24433;&#36039;&#35338;&#30456;&#38364;&#30340;&#34920;&#26684;<a class="anchor-link" href="#&#33287;&#38651;&#24433;&#36039;&#35338;&#30456;&#38364;&#30340;&#34920;&#26684;">&#182;</a></h2><p><a href="https://sqlzoo.net/wiki/More_JOIN_operations">https://sqlzoo.net/wiki/More_JOIN_operations</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="img/schema_join.png" alt=""></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#26597;&#35426;&#21271;&#38750;&#35548;&#24433;&#30340;-id-&#33287;-title-&#19981;&#38656;&#35201;&#32879;&#32080;&#34920;&#26684;">&#26597;&#35426;&#21271;&#38750;&#35548;&#24433;&#30340; <code>id</code> &#33287; <code>title</code> &#19981;&#38656;&#35201;&#32879;&#32080;&#34920;&#26684;<a class="anchor-link" href="#&#26597;&#35426;&#21271;&#38750;&#35548;&#24433;&#30340;-id-&#33287;-title-&#19981;&#38656;&#35201;&#32879;&#32080;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span>
+       <span class="n">title</span>
+    <span class="k">FROM</span> <span class="n">movie</span>
+    <span class="k">WHERE</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Casablanca&#39;</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#22914;&#26524;&#25105;&#24819;&#26597;&#35426;-Harrison-Ford-&#26377;&#28436;&#20986;&#21738;&#20123;&#38651;&#24433;&#21602;&#65311;">&#22914;&#26524;&#25105;&#24819;&#26597;&#35426; Harrison Ford &#26377;&#28436;&#20986;&#21738;&#20123;&#38651;&#24433;&#21602;&#65311;<a class="anchor-link" href="#&#22914;&#26524;&#25105;&#24819;&#26597;&#35426;-Harrison-Ford-&#26377;&#28436;&#20986;&#21738;&#20123;&#38651;&#24433;&#21602;&#65311;">&#182;</a></h2><p>需要透過 <code>acting</code> 聯結 <code>movie</code> 與 <code>actor</code></p>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">movie</span><span class="p">.</span><span class="n">title</span>
+    <span class="k">FROM</span> <span class="n">movie</span>
+    <span class="k">JOIN</span> <span class="n">casting</span>
+    <span class="k">ON</span> <span class="n">movie</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">casting</span><span class="p">.</span><span class="n">movieid</span>
+    <span class="k">JOIN</span> <span class="n">actor</span>
+    <span class="k">ON</span> <span class="n">casting</span><span class="p">.</span><span class="n">actorid</span><span class="o">=</span><span class="n">actor</span><span class="p">.</span><span class="n">id</span>
+    <span class="k">WHERE</span> <span class="n">actor</span><span class="p">.</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Harrison Ford&#39;</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="JOIN-&#35486;&#27861;&#38928;&#35373;&#28858;-Inner-Join&#65292;&#24847;&#21363;&#23559;&#25152;&#26377;&#34920;&#26684;&#20132;&#38598;&#30340;&#35264;&#28204;&#20540;&#20659;&#22238;"><code>JOIN</code> &#35486;&#27861;&#38928;&#35373;&#28858; Inner Join&#65292;&#24847;&#21363;&#23559;&#25152;&#26377;&#34920;&#26684;&#20132;&#38598;&#30340;&#35264;&#28204;&#20540;&#20659;&#22238;<a class="anchor-link" href="#JOIN-&#35486;&#27861;&#38928;&#35373;&#28858;-Inner-Join&#65292;&#24847;&#21363;&#23559;&#25152;&#26377;&#34920;&#26684;&#20132;&#38598;&#30340;&#35264;&#28204;&#20540;&#20659;&#22238;">&#182;</a></h2><ul>
+<li><code>JOIN</code> 後面接欲聯結的表格名稱</li>
+<li><code>ON</code> 後面指定欲聯結表格中的參照欄位</li>
+<li>指派表格名稱是進行聯結時的好習慣</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#23436;&#25104;-10-&#20491;-SQLZOO-&#32244;&#32722;&#65288;1~10&#65289;">&#23436;&#25104; 10 &#20491; SQLZOO &#32244;&#32722;&#65288;1~10&#65289;<a class="anchor-link" href="#&#23436;&#25104;-10-&#20491;-SQLZOO-&#32244;&#32722;&#65288;1~10&#65289;">&#182;</a></h2><p><a href="https://sqlzoo.net/wiki/More_JOIN_operations">https://sqlzoo.net/wiki/More_JOIN_operations</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#26597;&#35426;-world-&#36039;&#26009;&#24235;&#20013;&#21488;&#28771;&#12289;&#26085;&#26412;&#30340;&#22283;&#23478;&#36039;&#26009;&#33287;&#21488;&#28771;&#12289;&#21335;&#38867;&#30340;&#22478;&#24066;&#36039;&#26009;">&#26597;&#35426; <code>world</code> &#36039;&#26009;&#24235;&#20013;&#21488;&#28771;&#12289;&#26085;&#26412;&#30340;&#22283;&#23478;&#36039;&#26009;&#33287;&#21488;&#28771;&#12289;&#21335;&#38867;&#30340;&#22478;&#24066;&#36039;&#26009;<a class="anchor-link" href="#&#26597;&#35426;-world-&#36039;&#26009;&#24235;&#20013;&#21488;&#28771;&#12289;&#26085;&#26412;&#30340;&#22283;&#23478;&#36039;&#26009;&#33287;&#21488;&#28771;&#12289;&#21335;&#38867;&#30340;&#22478;&#24066;&#36039;&#26009;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*左表格*/</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+    <span class="k">WHERE</span> <span class="n">Name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Taiwan&#39;</span><span class="p">,</span> <span class="s1">&#39;Japan&#39;</span><span class="p">);</span>
+
+<span class="cm">/*右表格*/</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">city</span>
+    <span class="k">WHERE</span> <span class="n">CountryCode</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;TWN&#39;</span><span class="p">,</span> <span class="s1">&#39;KOR&#39;</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20839;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#24038;&#21491;&#34920;&#26684;&#20132;&#38598;&#30340;&#36039;&#26009;&#65288;&#21488;&#28771;&#30340;&#22283;&#23478;&#12289;&#22478;&#24066;&#36039;&#26009;&#65289;">&#20839;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#24038;&#21491;&#34920;&#26684;&#20132;&#38598;&#30340;&#36039;&#26009;&#65288;&#21488;&#28771;&#30340;&#22283;&#23478;&#12289;&#22478;&#24066;&#36039;&#26009;&#65289;<a class="anchor-link" href="#&#20839;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#24038;&#21491;&#34920;&#26684;&#20132;&#38598;&#30340;&#36039;&#26009;&#65288;&#21488;&#28771;&#30340;&#22283;&#23478;&#12289;&#22478;&#24066;&#36039;&#26009;&#65289;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*內部聯結*/</span>
+<span class="k">SELECT</span> <span class="n">left_tbl</span><span class="p">.</span><span class="o">*</span>
+      <span class="p">,</span><span class="n">right_tbl</span><span class="p">.</span><span class="o">*</span>
+    <span class="k">FROM</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="o">*</span>
+        <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+        <span class="k">WHERE</span> <span class="n">Code</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;TWN&#39;</span><span class="p">,</span> <span class="s1">&#39;JPN&#39;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="n">left_tbl</span>
+    <span class="k">JOIN</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">city</span>
+        <span class="k">WHERE</span> <span class="n">CountryCode</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;TWN&#39;</span><span class="p">,</span> <span class="s1">&#39;KOR&#39;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="n">right_tbl</span>
+    <span class="k">ON</span> <span class="n">left_tbl</span><span class="p">.</span><span class="n">Code</span> <span class="o">=</span> <span class="n">right_tbl</span><span class="p">.</span><span class="n">CountryCode</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#24038;&#22806;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#25152;&#26377;&#24038;&#34920;&#26684;&#65288;&#21488;&#28771;&#12289;&#26085;&#26412;&#65289;&#30340;&#36039;&#26009;">&#24038;&#22806;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#25152;&#26377;&#24038;&#34920;&#26684;&#65288;&#21488;&#28771;&#12289;&#26085;&#26412;&#65289;&#30340;&#36039;&#26009;<a class="anchor-link" href="#&#24038;&#22806;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#25152;&#26377;&#24038;&#34920;&#26684;&#65288;&#21488;&#28771;&#12289;&#26085;&#26412;&#65289;&#30340;&#36039;&#26009;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*左外部聯結*/</span>
+<span class="k">SELECT</span> <span class="n">left_tbl</span><span class="p">.</span><span class="o">*</span>
+      <span class="p">,</span><span class="n">right_tbl</span><span class="p">.</span><span class="o">*</span>
+    <span class="k">FROM</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="o">*</span>
+        <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+        <span class="k">WHERE</span> <span class="n">Code</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;TWN&#39;</span><span class="p">,</span> <span class="s1">&#39;JPN&#39;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="n">left_tbl</span>
+    <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">city</span>
+        <span class="k">WHERE</span> <span class="n">CountryCode</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;TWN&#39;</span><span class="p">,</span> <span class="s1">&#39;KOR&#39;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="n">right_tbl</span>
+    <span class="k">ON</span> <span class="n">left_tbl</span><span class="p">.</span><span class="n">Code</span> <span class="o">=</span> <span class="n">right_tbl</span><span class="p">.</span><span class="n">CountryCode</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#21491;&#22806;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#25152;&#26377;&#21491;&#34920;&#26684;&#65288;&#21488;&#28771;&#12289;&#21335;&#38867;&#65289;&#30340;&#36039;&#26009;">&#21491;&#22806;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#25152;&#26377;&#21491;&#34920;&#26684;&#65288;&#21488;&#28771;&#12289;&#21335;&#38867;&#65289;&#30340;&#36039;&#26009;<a class="anchor-link" href="#&#21491;&#22806;&#37096;&#32879;&#32080;&#65306;&#30041;&#19979;&#25152;&#26377;&#21491;&#34920;&#26684;&#65288;&#21488;&#28771;&#12289;&#21335;&#38867;&#65289;&#30340;&#36039;&#26009;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*右外部聯結*/</span>
+<span class="k">SELECT</span> <span class="n">left_tbl</span><span class="p">.</span><span class="o">*</span>
+      <span class="p">,</span><span class="n">right_tbl</span><span class="p">.</span><span class="o">*</span>
+    <span class="k">FROM</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="o">*</span>
+        <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+        <span class="k">WHERE</span> <span class="n">Code</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;TWN&#39;</span><span class="p">,</span> <span class="s1">&#39;JPN&#39;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="n">left_tbl</span>
+    <span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">city</span>
+        <span class="k">WHERE</span> <span class="n">CountryCode</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;TWN&#39;</span><span class="p">,</span> <span class="s1">&#39;KOR&#39;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="n">right_tbl</span>
+    <span class="k">ON</span> <span class="n">left_tbl</span><span class="p">.</span><span class="n">Code</span> <span class="o">=</span> <span class="n">right_tbl</span><span class="p">.</span><span class="n">CountryCode</span><span class="p">;</span>
+</pre></div>
+
 </div>
 </div>
 </div></section></section>
