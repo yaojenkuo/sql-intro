@@ -16,6 +16,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 繳交作業表單
 
+- [319 期假日專題班](https://forms.gle/GTrWSfk6yHFsrhuK9)
 - [318 期假日專題班](https://forms.gle/i8RBd66JvqA2d6iZ6)
 - [312 期假日專題班](https://forms.gle/qwxnfnpQQGRKmzcd9)
 - [311 期假日專題班](https://forms.gle/1wvkbiPEqCwPKZa4A)
@@ -30,9 +31,13 @@ Contact me: <tony@kyosei.ai>
 - 作業繳交期限為課程結束後一週內，如遇長假期（春節、連假）則順延
 
 |編號|連結|分數|
-|作業 1|[Learn SQL](https://www.codecademy.com/learn/learn-sql)|70|
-|作業 2|[SQL: Table Transformation](https://www.codecademy.com/learn/sql-table-transformation)|70|
-|作業 3|[SQL: Analyzing Business Metrics](https://www.codecademy.com/learn/sql-analyzing-business-metrics)|70|
+|---|----|---|
+|作業 1|[Intro to SQL for Data Science](http://datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
+|作業 2|[Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
+|作業 3|[SQLZOO 練習題（ㄧ） 1~13](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)|35|
+|作業 4|[SQLZOO 練習題（二） 1~5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
+|作業 5|[SQLZOO 練習題（三） 1~8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
+|作業 6|[SQLZOO 練習題（四） 1~10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
 
 ### 課程大綱
 
@@ -46,10 +51,13 @@ Contact me: <tony@kyosei.ai>
 ### 延伸閱讀
 
 - [SQL 深入淺出](https://www.tenlong.com.tw/products/9789866840166)
-- [進擊的資料科學：向資料庫查詢](https://www.datainpoint.com/data-science-in-action/03-querying-databases.html)
+- [進擊的資料科學](https://www.books.com.tw/products/0010827812)
+- [進擊的資料科學：網頁版](https://www.datainpoint.com/data-science-in-action/)
+- [DataCamp: SQL Courses](https://www.datacamp.com/courses/tech:sql?tap_a=5644-dce66f&tap_s=194899-1fb421)
 
 ### 近期上課錄影
 
+- [319 期假日專題班]()
 - [318 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuW-eod7wIisXVGkjn1-Bbxa)
 - [312 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVGhDhnELeF6pfu5P9xgeDV)
 - [311 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU3AAqgvJuuLtoH1lzzzZ3Q)
