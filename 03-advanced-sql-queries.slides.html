@@ -13285,16 +13285,15 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#20420;&#22283;&#22810;&#30340;&#22283;&#23478;">&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#20420;&#22283;&#22810;&#30340;&#22283;&#23478;<a class="anchor-link" href="#&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#20420;&#22283;&#22810;&#30340;&#22283;&#23478;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="cm">/*先知道俄國人口有多少*/</span>
-<span class="k">SELECT</span> <span class="n">population</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Russia&#39;</span><span class="p">;</span> <span class="cm">/*146000000*/</span>
+<h2 id="&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#24052;&#35199;&#22810;&#30340;&#22283;&#23478;">&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#24052;&#35199;&#22810;&#30340;&#22283;&#23478;<a class="anchor-link" href="#&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#24052;&#35199;&#22810;&#30340;&#22283;&#23478;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*先知道巴西人口有多少*/</span>
+<span class="k">SELECT</span> <span class="n">Population</span>
+    <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+    <span class="k">WHERE</span> <span class="n">Name</span> <span class="o">=</span> <span class="s1">&#39;Brazil&#39;</span><span class="p">;</span>
 
 <span class="cm">/*然後再寫一個查詢*/</span>
-<span class="k">SELECT</span> <span class="n">name</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">population</span> <span class="o">&gt;</span> <span class="mi">146000000</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">Name</span>
+    <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+    <span class="k">WHERE</span> <span class="n">Population</span> <span class="o">&gt;</span> <span class="n">___</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13303,50 +13302,13 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#20420;&#22283;&#22810;&#30340;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;">&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#20420;&#22283;&#22810;&#30340;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;<a class="anchor-link" href="#&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#20420;&#22283;&#22810;&#30340;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">name</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">population</span> <span class="o">&gt;</span> <span class="p">(</span>
-    <span class="k">SELECT</span> <span class="n">population</span>
-        <span class="k">FROM</span> <span class="n">world</span>
-        <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Russia&#39;</span>
+<h2 id="&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#24052;&#35199;&#22810;&#30340;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;">&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#24052;&#35199;&#22810;&#30340;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;<a class="anchor-link" href="#&#25214;&#20986;&#20154;&#21475;&#25976;&#27604;&#24052;&#35199;&#22810;&#30340;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span>
+<span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+<span class="k">WHERE</span> <span class="n">Population</span> <span class="o">&gt;</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">Population</span>
+        <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+        <span class="k">WHERE</span> <span class="n">Name</span> <span class="o">=</span> <span class="s1">&#39;Brazil&#39;</span>
 <span class="p">);</span>
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#25214;&#20986;&#20154;&#22343;-gdp-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;">&#25214;&#20986;&#20154;&#22343; gdp &#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;<a class="anchor-link" href="#&#25214;&#20986;&#20154;&#22343;-gdp-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="cm">/*先知道英國人均 GDP 多少*/</span>
-<span class="k">SELECT</span> <span class="n">gdp</span><span class="o">/</span><span class="n">population</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;United Kingdom&#39;</span><span class="p">;</span> <span class="cm">/*38555.0739*/</span>
-
-<span class="cm">/*然後再寫一個查詢*/</span>
-<span class="k">SELECT</span> <span class="n">name</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">continent</span> <span class="o">=</span> <span class="s1">&#39;Europe&#39;</span> <span class="k">AND</span>
-      <span class="n">gdp</span><span class="o">/</span><span class="n">population</span> <span class="o">&gt;</span> <span class="mi">38555</span><span class="p">.</span><span class="mi">0739</span><span class="p">;</span>
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#25214;&#20986;&#20154;&#22343;-gdp-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;">&#25214;&#20986;&#20154;&#22343; gdp &#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;<a class="anchor-link" href="#&#25214;&#20986;&#20154;&#22343;-gdp-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;&#65306;&#23376;&#26597;&#35426;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">name</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">continent</span> <span class="o">=</span> <span class="s1">&#39;Europe&#39;</span> <span class="k">AND</span>
-      <span class="n">gdp</span><span class="o">/</span><span class="n">population</span> <span class="o">&gt;</span> <span class="p">(</span>
-      <span class="k">SELECT</span> <span class="n">gdp</span><span class="o">/</span><span class="n">population</span>
-          <span class="k">FROM</span> <span class="n">world</span>
-          <span class="k">WHERE</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;United Kingdom&#39;</span>
-      <span class="p">);</span>
 </pre></div>
 
 </div>
@@ -13356,15 +13318,15 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;">&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;<a class="anchor-link" href="#&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*先知道阿根廷、澳洲在哪個洲*/</span>
-<span class="k">SELECT</span> <span class="n">continent</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Australia&#39;</span><span class="p">);</span> <span class="cm">/*South America, Oceania*/</span>
+<span class="k">SELECT</span> <span class="n">Continent</span>
+    <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+    <span class="k">WHERE</span> <span class="n">Name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Australia&#39;</span><span class="p">);</span>
 
 <span class="cm">/*然後再寫一個查詢*/</span>
-<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
-       <span class="n">continent</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">continent</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;South America&#39;</span><span class="p">,</span> <span class="s1">&#39;Oceania&#39;</span><span class="p">);</span>
+<span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+       <span class="n">Continent</span>
+    <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+    <span class="k">WHERE</span> <span class="n">Continent</span> <span class="k">IN</span> <span class="n">___</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13373,14 +13335,13 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;&#65306;&#23376;&#26597;&#35426;">&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;&#65306;&#23376;&#26597;&#35426;<a class="anchor-link" href="#&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;&#65306;&#23376;&#26597;&#35426;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
-       <span class="n">continent</span>
-<span class="k">FROM</span> <span class="n">world</span>
-<span class="k">WHERE</span> <span class="n">continent</span> <span class="k">IN</span> <span class="p">(</span>
-    <span class="k">SELECT</span> <span class="n">continent</span>
-        <span class="k">FROM</span> <span class="n">world</span>
-        <span class="k">WHERE</span> <span class="n">name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Australia&#39;</span><span class="p">)</span>
+<h2 id="&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;&#65306;&#23376;&#26597;&#35426;">&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;&#65306;&#23376;&#26597;&#35426;<a class="anchor-link" href="#&#25214;&#20986;&#33287;&#38463;&#26681;&#24311;&#12289;&#28595;&#27954;&#21516;&#27954;&#30340;&#22283;&#23478;&#12289;&#27954;&#21029;&#65306;&#23376;&#26597;&#35426;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+       <span class="n">Continent</span>
+<span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+<span class="k">WHERE</span> <span class="n">Continent</span> <span class="k">IN</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">Continent</span>
+        <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+        <span class="k">WHERE</span> <span class="n">Name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Argentina&#39;</span><span class="p">,</span> <span class="s1">&#39;Australia&#39;</span><span class="p">)</span>
 <span class="p">);</span>
 </pre></div>
 
@@ -13390,8 +13351,28 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#23436;&#25104;-5-&#20491;-SQLZOO-&#32244;&#32722;&#65288;1~5&#65289;">&#23436;&#25104; 5 &#20491; SQLZOO &#32244;&#32722;&#65288;1~5&#65289;<a class="anchor-link" href="#&#23436;&#25104;-5-&#20491;-SQLZOO-&#32244;&#32722;&#65288;1~5&#65289;">&#182;</a></h2><p><a href="https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial">https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial</a></p>
-
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#20998;&#20841;&#20491;&#26597;&#35426;&#24478;-world.country-&#25214;&#20986;&#20154;&#22343;-GNP-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;">&#38568;&#22530;&#32244;&#32722;&#65306;&#20998;&#20841;&#20491;&#26597;&#35426;&#24478; <code>world.country</code> &#25214;&#20986;&#20154;&#22343; GNP &#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#20998;&#20841;&#20491;&#26597;&#35426;&#24478;-world.country-&#25214;&#20986;&#20154;&#22343;-GNP-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#20351;&#29992;&#23376;&#26597;&#35426;&#24478;-world.country-&#25214;&#20986;&#20154;&#22343;-GNP-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;">&#38568;&#22530;&#32244;&#32722;&#65306;&#20351;&#29992;&#23376;&#26597;&#35426;&#24478; <code>world.country</code> &#25214;&#20986;&#20154;&#22343; GNP &#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#20351;&#29992;&#23376;&#26597;&#35426;&#24478;-world.country-&#25214;&#20986;&#20154;&#22343;-GNP-&#27604;&#33521;&#22283;&#39640;&#30340;&#27472;&#27954;&#22283;&#23478;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#20998;&#20841;&#20491;&#26597;&#35426;&#24478;-nba.nba_players-&#25214;&#20986;-ppg-&#27604;-Stephon-Curry-&#39640;&#30340;&#29699;&#21729;">&#38568;&#22530;&#32244;&#32722;&#65306;&#20998;&#20841;&#20491;&#26597;&#35426;&#24478; <code>nba.nba_players</code> &#25214;&#20986; <code>ppg</code> &#27604; Stephon Curry &#39640;&#30340;&#29699;&#21729;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#20998;&#20841;&#20491;&#26597;&#35426;&#24478;-nba.nba_players-&#25214;&#20986;-ppg-&#27604;-Stephon-Curry-&#39640;&#30340;&#29699;&#21729;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#20351;&#29992;&#23376;&#26597;&#35426;&#24478;-nba.nba_players-&#25214;&#20986;-ppg-&#27604;-Stephon-Curry-&#39640;&#30340;&#29699;&#21729;">&#38568;&#22530;&#32244;&#32722;&#65306;&#20351;&#29992;&#23376;&#26597;&#35426;&#24478; <code>nba.nba_players</code> &#25214;&#20986; <code>ppg</code> &#27604; Stephon Curry &#39640;&#30340;&#29699;&#21729;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#20351;&#29992;&#23376;&#26597;&#35426;&#24478;-nba.nba_players-&#25214;&#20986;-ppg-&#27604;-Stephon-Curry-&#39640;&#30340;&#29699;&#21729;">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13418,10 +13399,9 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="LENGTH()-&#20989;&#25976;&#21487;&#20197;&#24471;&#30693;&#25991;&#23383;&#38263;&#24230;"><code>LENGTH()</code> &#20989;&#25976;&#21487;&#20197;&#24471;&#30693;&#25991;&#23383;&#38263;&#24230;<a class="anchor-link" href="#LENGTH()-&#20989;&#25976;&#21487;&#20197;&#24471;&#30693;&#25991;&#23383;&#38263;&#24230;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
-       <span class="k">LENGTH</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-  <span class="k">FROM</span> <span class="n">world</span><span class="p">;</span>
+<h2 id="LENGTH()-&#20989;&#25976;&#21487;&#20197;&#24471;&#30693;&#25991;&#23383;&#38263;&#24230;"><code>LENGTH()</code> &#20989;&#25976;&#21487;&#20197;&#24471;&#30693;&#25991;&#23383;&#38263;&#24230;<a class="anchor-link" href="#LENGTH()-&#20989;&#25976;&#21487;&#20197;&#24471;&#30693;&#25991;&#23383;&#38263;&#24230;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+       <span class="k">LENGTH</span><span class="p">(</span><span class="n">Name</span><span class="p">)</span>
+  <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13430,10 +13410,9 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="LEFT(,-n)-&#20989;&#25976;&#21487;&#20197;&#21462;&#20986;&#30001;&#24038;&#37002;&#25976;&#20358;&#30340;-n-&#20491;&#25991;&#23383;"><code>LEFT(, n)</code> &#20989;&#25976;&#21487;&#20197;&#21462;&#20986;&#30001;&#24038;&#37002;&#25976;&#20358;&#30340; n &#20491;&#25991;&#23383;<a class="anchor-link" href="#LEFT(,-n)-&#20989;&#25976;&#21487;&#20197;&#21462;&#20986;&#30001;&#24038;&#37002;&#25976;&#20358;&#30340;-n-&#20491;&#25991;&#23383;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
-       <span class="k">LEFT</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-  <span class="k">FROM</span> <span class="n">world</span><span class="p">;</span>
+<h2 id="LEFT(,-n)-&#20989;&#25976;&#21487;&#20197;&#21462;&#20986;&#30001;&#24038;&#37002;&#25976;&#20358;&#30340;-n-&#20491;&#25991;&#23383;"><code>LEFT(, n)</code> &#20989;&#25976;&#21487;&#20197;&#21462;&#20986;&#30001;&#24038;&#37002;&#25976;&#20358;&#30340; n &#20491;&#25991;&#23383;<a class="anchor-link" href="#LEFT(,-n)-&#20989;&#25976;&#21487;&#20197;&#21462;&#20986;&#30001;&#24038;&#37002;&#25976;&#20358;&#30340;-n-&#20491;&#25991;&#23383;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+       <span class="k">LEFT</span><span class="p">(</span><span class="n">Name</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+  <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13442,11 +13421,9 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="CONCAT()-&#20989;&#25976;&#21487;&#20197;&#36899;&#32080;&#25991;&#23383;"><code>CONCAT()</code> &#20989;&#25976;&#21487;&#20197;&#36899;&#32080;&#25991;&#23383;<a class="anchor-link" href="#CONCAT()-&#20989;&#25976;&#21487;&#20197;&#36899;&#32080;&#25991;&#23383;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span>
-       <span class="n">CONCAT</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39; || &#39;</span><span class="p">,</span> <span class="n">continent</span><span class="p">)</span>
-    <span class="k">FROM</span> <span class="n">world</span>
-    <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
+<h2 id="CONCAT()-&#20989;&#25976;&#21487;&#20197;&#36899;&#32080;&#25991;&#23383;"><code>CONCAT()</code> &#20989;&#25976;&#21487;&#20197;&#36899;&#32080;&#25991;&#23383;<a class="anchor-link" href="#CONCAT()-&#20989;&#25976;&#21487;&#20197;&#36899;&#32080;&#25991;&#23383;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+       <span class="n">CONCAT</span><span class="p">(</span><span class="n">Name</span><span class="p">,</span> <span class="s1">&#39; || &#39;</span><span class="p">,</span> <span class="n">Continent</span><span class="p">)</span>
+    <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13476,12 +13453,18 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="COUNT()-&#20989;&#25976;&#65306;&#35336;&#31639;&#21015;&#25976;"><code>COUNT()</code> &#20989;&#25976;&#65306;&#35336;&#31639;&#21015;&#25976;<a class="anchor-link" href="#COUNT()-&#20989;&#25976;&#65306;&#35336;&#31639;&#21015;&#25976;">&#182;</a></h2><p>有幾個國家的土地面積超過 100 萬平方公里？</p>
-<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
-  <span class="k">FROM</span> <span class="n">world</span>
-  <span class="k">WHERE</span> <span class="n">area</span> <span class="o">&gt;</span> <span class="mi">1000000</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+  <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+  <span class="k">WHERE</span> <span class="n">SurfaceArea</span> <span class="o">&gt;</span> <span class="mi">1000000</span><span class="p">;</span>
 </pre></div>
 
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-nba.nba_players-&#20013;&#26377;&#24190;&#20491;&#29699;&#21729;&#30340;&#22580;&#22343;&#24471;&#20998;-ppg-&#36229;&#36942;-20-&#20998;&#65311;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>nba.nba_players</code> &#20013;&#26377;&#24190;&#20491;&#29699;&#21729;&#30340;&#22580;&#22343;&#24471;&#20998; <code>ppg</code> &#36229;&#36942; 20 &#20998;&#65311;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-nba.nba_players-&#20013;&#26377;&#24190;&#20491;&#29699;&#21729;&#30340;&#22580;&#22343;&#24471;&#20998;-ppg-&#36229;&#36942;-20-&#20998;&#65311;">&#182;</a></h2>
 </div>
 </div>
 </div></section><section>
@@ -13489,9 +13472,8 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="SUM()-&#20989;&#25976;&#65306;&#22238;&#20659;&#21152;&#32317;&#20540;"><code>SUM()</code> &#20989;&#25976;&#65306;&#22238;&#20659;&#21152;&#32317;&#20540;<a class="anchor-link" href="#SUM()-&#20989;&#25976;&#65306;&#22238;&#20659;&#21152;&#32317;&#20540;">&#182;</a></h2><p>全世界總人口數為多少？</p>
-<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>
-  <span class="k">FROM</span> <span class="n">world</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">Population</span><span class="p">)</span>
+  <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13500,12 +13482,25 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20013;&#19969;&#23432;&#20013;&#33287;&#26607;&#25991;&#21746;&#30340;&#32317;&#31080;&#25976;&#21508;&#28858;&#65311;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>tw_election_2018.mayors</code> &#20013;&#19969;&#23432;&#20013;&#33287;&#26607;&#25991;&#21746;&#30340;&#32317;&#31080;&#25976;&#21508;&#28858;&#65311;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20013;&#19969;&#23432;&#20013;&#33287;&#26607;&#25991;&#21746;&#30340;&#32317;&#31080;&#25976;&#21508;&#28858;&#65311;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="DISTINCT()-&#20989;&#25976;&#65306;&#22238;&#20659;&#30456;&#30064;&#20540;"><code>DISTINCT()</code> &#20989;&#25976;&#65306;&#22238;&#20659;&#30456;&#30064;&#20540;<a class="anchor-link" href="#DISTINCT()-&#20989;&#25976;&#65306;&#22238;&#20659;&#30456;&#30064;&#20540;">&#182;</a></h2><p>全世界的洲別為何，顯示一次即可</p>
-<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="k">DISTINCT</span><span class="p">(</span><span class="n">continent</span><span class="p">)</span>
-  <span class="k">FROM</span> <span class="n">world</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+  <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span><span class="p">;</span>
 </pre></div>
 
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#21488;&#21271;&#24066;&#20849;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;&#21488;&#21271;&#24066;&#22823;&#23433;&#21312;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>tw_election_2018.mayors</code> &#21488;&#21271;&#24066;&#20849;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;&#21488;&#21271;&#24066;&#22823;&#23433;&#21312;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#21488;&#21271;&#24066;&#20849;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;&#21488;&#21271;&#24066;&#22823;&#23433;&#21312;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13527,11 +13522,10 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="COUNT()-&#20989;&#25976;&#21152;&#20837;-GROUP-BY"><code>COUNT()</code> &#20989;&#25976;&#21152;&#20837; <code>GROUP BY</code><a class="anchor-link" href="#COUNT()-&#20989;&#25976;&#21152;&#20837;-GROUP-BY">&#182;</a></h2><p>計算各個 Continent 的國家數</p>
-<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">continent</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Continent</span><span class="p">,</span>
        <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
-    <span class="k">FROM</span> <span class="n">world</span>
-    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">continent</span><span class="p">;</span>
+    <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">Continent</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13540,14 +13534,27 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SUM()-&#20989;&#25976;&#21152;&#20837;-GROUP-BY"><code>SUM()</code> &#20989;&#25976;&#21152;&#20837; <code>GROUP BY</code><a class="anchor-link" href="#SUM()-&#20989;&#25976;&#21152;&#20837;-GROUP-BY">&#182;</a></h2><p>計算各個 continent 的人口總數</p>
-<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">continent</span>
-       <span class="p">,</span><span class="k">SUM</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>
-  <span class="k">FROM</span> <span class="n">world</span>
-  <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">continent</span><span class="p">;</span>
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#21488;&#21271;&#24066;&#30340;&#34892;&#25919;&#21312;&#21508;&#33258;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>tw_election_2018.mayors</code> &#21488;&#21271;&#24066;&#30340;&#34892;&#25919;&#21312;&#21508;&#33258;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#21488;&#21271;&#24066;&#30340;&#34892;&#25919;&#21312;&#21508;&#33258;&#26377;&#24190;&#20491;&#25237;&#31080;&#25152;&#65311;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="SUM()-&#20989;&#25976;&#21152;&#20837;-GROUP-BY"><code>SUM()</code> &#20989;&#25976;&#21152;&#20837; <code>GROUP BY</code><a class="anchor-link" href="#SUM()-&#20989;&#25976;&#21152;&#20837;-GROUP-BY">&#182;</a></h2><p>計算各個 Continent 的人口總數</p>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Continent</span>
+       <span class="p">,</span><span class="k">SUM</span><span class="p">(</span><span class="n">Population</span><span class="p">)</span>
+  <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+  <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">Continent</span><span class="p">;</span>
 </pre></div>
 
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20845;&#37117;&#21508;&#20505;&#36984;&#20154;&#30340;&#24471;&#31080;&#25976;&#20998;&#21029;&#28858;&#20309;&#65311;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>tw_election_2018.mayors</code> &#20845;&#37117;&#21508;&#20505;&#36984;&#20154;&#30340;&#24471;&#31080;&#25976;&#20998;&#21029;&#28858;&#20309;&#65311;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20845;&#37117;&#21508;&#20505;&#36984;&#20154;&#30340;&#24471;&#31080;&#25976;&#20998;&#21029;&#28858;&#20309;&#65311;">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13562,11 +13569,10 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#37341;&#23565;&#32858;&#21512;&#20989;&#25976;&#30340;&#36939;&#31639;&#32080;&#26524;&#20316;&#36039;&#26009;&#31721;&#36984;">&#37341;&#23565;&#32858;&#21512;&#20989;&#25976;&#30340;&#36939;&#31639;&#32080;&#26524;&#20316;&#36039;&#26009;&#31721;&#36984;<a class="anchor-link" href="#&#37341;&#23565;&#32858;&#21512;&#20989;&#25976;&#30340;&#36939;&#31639;&#32080;&#26524;&#20316;&#36039;&#26009;&#31721;&#36984;">&#182;</a></h2><p>找出總人口數超過 1 億的洲</p>
-<div class="highlight"><pre><span></span><span class="cm">/*SQLZOO*/</span>
-<span class="k">SELECT</span> <span class="n">continent</span>
-  <span class="k">FROM</span> <span class="n">world</span>
-  <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">continent</span>
-  <span class="k">HAVING</span> <span class="k">SUM</span><span class="p">(</span><span class="n">population</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100000000</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Continent</span>
+  <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
+  <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">Continent</span>
+  <span class="k">HAVING</span> <span class="k">SUM</span><span class="p">(</span><span class="n">Population</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100000000</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13575,8 +13581,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#23436;&#25104;-8-&#20491;-SQLZOO-&#32244;&#32722;">&#23436;&#25104; 8 &#20491; SQLZOO &#32244;&#32722;<a class="anchor-link" href="#&#23436;&#25104;-8-&#20491;-SQLZOO-&#32244;&#32722;">&#182;</a></h2><p><a href="https://sqlzoo.net/wiki/SUM_and_COUNT">https://sqlzoo.net/wiki/SUM_and_COUNT</a></p>
-
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20840;&#21488;&#28771;&#36229;&#36942;-1-&#33836;&#31080;&#30340;&#25237;&#31080;&#25152;&#32232;&#34399;&#33287;&#25152;&#22312;&#30340;&#32291;&#24066;&#12289;&#26449;&#37324;&#28858;&#20309;&#65311;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>tw_election_2018.mayors</code> &#20840;&#21488;&#28771;&#36229;&#36942; 1 &#33836;&#31080;&#30340;&#25237;&#31080;&#25152;&#32232;&#34399;&#33287;&#25152;&#22312;&#30340;&#32291;&#24066;&#12289;&#26449;&#37324;&#28858;&#20309;&#65311;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20840;&#21488;&#28771;&#36229;&#36942;-1-&#33836;&#31080;&#30340;&#25237;&#31080;&#25152;&#32232;&#34399;&#33287;&#25152;&#22312;&#30340;&#32291;&#24066;&#12289;&#26449;&#37324;&#28858;&#20309;&#65311;">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
