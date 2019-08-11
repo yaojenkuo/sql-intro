@@ -57,7 +57,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 近期上課錄影
 
-- [319 期假日專題班]()
+- [319 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWPTAVsRU8GCmWpTfYB9Alv)
 - [318 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuW-eod7wIisXVGkjn1-Bbxa)
 - [312 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVGhDhnELeF6pfu5P9xgeDV)
 - [311 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU3AAqgvJuuLtoH1lzzzZ3Q)
