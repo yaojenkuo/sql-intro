@@ -16,7 +16,8 @@ Contact me: <tony@kyosei.ai>
 
 ### 繳交作業表單
 
-- [319 期假日專題班](https://forms.gle/GTrWSfk6yHFsrhuK9)
+- [319 期假日專題班 08.25-09.08](https://forms.gle/ApdUYmKoeLQcCLos9)
+- [319 期假日專題班 08.10-08.24](https://forms.gle/v6TRAtDQ23r38CVKA)
 - [318 期假日專題班](https://forms.gle/i8RBd66JvqA2d6iZ6)
 - [312 期假日專題班](https://forms.gle/qwxnfnpQQGRKmzcd9)
 - [311 期假日專題班](https://forms.gle/1wvkbiPEqCwPKZa4A)
@@ -32,12 +33,12 @@ Contact me: <tony@kyosei.ai>
 
 |編號|連結|分數|
 |---|----|---|
-|作業 1|[Intro to SQL for Data Science](http://datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
-|作業 2|[Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
-|作業 3|[SQLZOO 練習題（ㄧ） 1~13](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)|35|
-|作業 4|[SQLZOO 練習題（二） 1~5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
-|作業 5|[SQLZOO 練習題（三） 1~8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
-|作業 6|[SQLZOO 練習題（四） 1~10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
+|作業 1(Free)|[SQLZOO 練習題（ㄧ） 1~13](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)|35|
+|作業 2(Free)|[SQLZOO 練習題（二） 1~5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
+|作業 3(Free)|[SQLZOO 練習題（三） 1~8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
+|作業 4(Free)|[SQLZOO 練習題（四） 1~10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
+|作業 5(Paid)|[Intro to SQL for Data Science](http://datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
+|作業 6(Paid)|[Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
 
 ### 課程大綱
 
@@ -57,7 +58,8 @@ Contact me: <tony@kyosei.ai>
 
 ### 近期上課錄影
 
-- [319 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWPTAVsRU8GCmWpTfYB9Alv)
+- [319 期假日專題班 08.25-09.08]()
+- [319 期假日專題班 08.10-08.24](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWPTAVsRU8GCmWpTfYB9Alv)
 - [318 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuW-eod7wIisXVGkjn1-Bbxa)
 - [312 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVGhDhnELeF6pfu5P9xgeDV)
 - [311 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU3AAqgvJuuLtoH1lzzzZ3Q)
