@@ -16071,9 +16071,9 @@ a.anchor-link {
 <li>找出人口數最多的前 10 個國家（<code>LIMIT</code> 敘述）</li>
 </ul>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
-       <span class="n">Population</span> <span class="k">DESC</span>
+       <span class="n">Population</span>
   <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
-  <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">Population</span>
+  <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">Population</span> <span class="k">DESC</span>
   <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;</span>
 </pre></div>
 
