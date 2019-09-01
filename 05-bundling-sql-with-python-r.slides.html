@@ -13252,9 +13252,8 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#22823;&#32177;">&#22823;&#32177;<a class="anchor-link" href="#&#22823;&#32177;">&#182;</a></h2><ul>
-<li>下載範例資料</li>
-<li>使用 Python</li>
-<li>使用 R</li>
+<li>與 Python 連結</li>
+<li>與 R 連結</li>
 </ul>
 
 </div>
@@ -13263,32 +13262,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#19979;&#36617;&#31684;&#20363;&#36039;&#26009;">&#19979;&#36617;&#31684;&#20363;&#36039;&#26009;<a class="anchor-link" href="#&#19979;&#36617;&#31684;&#20363;&#36039;&#26009;">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#25105;&#20497;&#28310;&#20633;&#20102;&#31684;&#20363;&#34920;&#26684;&#20358;&#32244;&#32722;&#21109;&#24314;&#33287;&#26597;&#35426;">&#25105;&#20497;&#28310;&#20633;&#20102;&#31684;&#20363;&#34920;&#26684;&#20358;&#32244;&#32722;&#21109;&#24314;&#33287;&#26597;&#35426;<a class="anchor-link" href="#&#25105;&#20497;&#28310;&#20633;&#20102;&#31684;&#20363;&#34920;&#26684;&#20358;&#32244;&#32722;&#21109;&#24314;&#33287;&#26597;&#35426;">&#182;</a></h2><ul>
-<li><a href="https://s3-ap-northeast-1.amazonaws.com/sqlite-demo-data/gapminder.csv">gapminder.csv</a></li>
-<li><a href="https://s3-ap-northeast-1.amazonaws.com/sqlite-demo-data/mayors.csv">mayors.csv</a></li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20351;&#29992;-Python">&#20351;&#29992; Python<a class="anchor-link" href="#&#20351;&#29992;-Python">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22312;-Python-&#20013;&#30475;&#30475;&#36889;&#20841;&#20491;&#34920;&#26684;">&#22312; Python &#20013;&#30475;&#30475;&#36889;&#20841;&#20491;&#34920;&#26684;<a class="anchor-link" href="#&#22312;-Python-&#20013;&#30475;&#30475;&#36889;&#20841;&#20491;&#34920;&#26684;">&#182;</a></h2>
+<h2 id="&#33287;-Python-&#36899;&#32080;">&#33287; Python &#36899;&#32080;<a class="anchor-link" href="#&#33287;-Python-&#36899;&#32080;">&#182;</a></h2>
 </div>
 </div>
 </div></section><section>
@@ -13303,15 +13277,25 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29992;&#19977;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#29992;&#19977;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;<a class="anchor-link" href="#&#29992;&#19977;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#182;</a></h2><ul>
+<li><code>pymysql</code></li>
+<li><code>sqlalchemy</code></li>
+<li><code>pandas</code></li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">mayors</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://s3-ap-northeast-1.amazonaws.com/sqlite-demo-data/mayors.csv&quot;</span><span class="p">)</span>
-<span class="n">gapminder</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://s3-ap-northeast-1.amazonaws.com/sqlite-demo-data/gapminder.csv&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Uncomment the code below to install pymysql, sqlalchemy, and pandas</span>
+<span class="c1"># !pip install pymysql sqlalchemy pandas</span>
 </pre></div>
 
     </div>
@@ -13319,267 +13303,46 @@ a.anchor-link {
 </div>
 
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#36617;&#20837;&#22871;&#20214;">&#36617;&#20837;&#22871;&#20214;<a class="anchor-link" href="#&#36617;&#20837;&#22871;&#20214;">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mayors</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pymysql</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="k">import</span> <span class="n">create_engine</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[2]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>admin_area</th>
-      <th>district</th>
-      <th>village</th>
-      <th>office</th>
-      <th>number</th>
-      <th>party</th>
-      <th>candidate</th>
-      <th>votes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>台北市</td>
-      <td>北投區</td>
-      <td>建民里</td>
-      <td>1</td>
-      <td>1</td>
-      <td>無黨籍</td>
-      <td>吳蕚洋</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>台北市</td>
-      <td>北投區</td>
-      <td>建民里</td>
-      <td>2</td>
-      <td>1</td>
-      <td>無黨籍</td>
-      <td>吳蕚洋</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>台北市</td>
-      <td>北投區</td>
-      <td>建民里</td>
-      <td>3</td>
-      <td>1</td>
-      <td>無黨籍</td>
-      <td>吳蕚洋</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>台北市</td>
-      <td>北投區</td>
-      <td>文林里</td>
-      <td>4</td>
-      <td>1</td>
-      <td>無黨籍</td>
-      <td>吳蕚洋</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>台北市</td>
-      <td>北投區</td>
-      <td>文林里</td>
-      <td>5</td>
-      <td>1</td>
-      <td>無黨籍</td>
-      <td>吳蕚洋</td>
-      <td>5</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#24314;&#31435;&#36899;&#32218;">&#24314;&#31435;&#36899;&#32218;<a class="anchor-link" href="#&#24314;&#31435;&#36899;&#32218;">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gapminder</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[3]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>country</th>
-      <th>continent</th>
-      <th>year</th>
-      <th>lifeExp</th>
-      <th>pop</th>
-      <th>gdpPercap</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1952</td>
-      <td>28.801</td>
-      <td>8425333</td>
-      <td>779.445314</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1957</td>
-      <td>30.332</td>
-      <td>9240934</td>
-      <td>820.853030</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1962</td>
-      <td>31.997</td>
-      <td>10267083</td>
-      <td>853.100710</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1967</td>
-      <td>34.020</td>
-      <td>11537966</td>
-      <td>836.197138</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Afghanistan</td>
-      <td>Asia</td>
-      <td>1972</td>
-      <td>36.088</td>
-      <td>13079460</td>
-      <td>739.981106</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20197;-sqlite3-&#24314;&#31435;&#36899;&#32218;">&#20197; <code>sqlite3</code> &#24314;&#31435;&#36899;&#32218;<a class="anchor-link" href="#&#20197;-sqlite3-&#24314;&#31435;&#36899;&#32218;">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;demo.db&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20197;-pandas-&#24314;&#31435;&#34920;&#26684;">&#20197; <code>pandas</code> &#24314;&#31435;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-pandas-&#24314;&#31435;&#34920;&#26684;">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">gapminder</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s2">&quot;gapminder&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s2">&quot;replace&quot;</span><span class="p">)</span>
-<span class="n">mayors</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s2">&quot;mayors&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s2">&quot;replace&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;rsqltrain.ced04jhfjfgi.ap-northeast-1.rds.amazonaws.com&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">3306</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;trainadmin&quot;</span>
+<span class="n">passwd</span> <span class="o">=</span> <span class="s2">&quot;csietrain&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;tw_election_2018&quot;</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;mysql+mysqldb://</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">@</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">passwd</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">dbname</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13596,103 +13359,17 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    SELECT continent,</span>
-<span class="s2">           SUM(pop) AS sum_pop</span>
-<span class="s2">        FROM gapminder</span>
-<span class="s2">        GROUP BY continent;</span>
-<span class="s2">&quot;&quot;&quot;</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query_str</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>continent</th>
-      <th>sum_pop</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Africa</td>
-      <td>6187585961</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Americas</td>
-      <td>7351438499</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Asia</td>
-      <td>30507333901</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Europe</td>
-      <td>6181115304</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Oceania</td>
-      <td>212992136</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">query_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    SELECT candidate,</span>
+<span class="s2">    SELECT number,</span>
+<span class="s2">           candidate,</span>
 <span class="s2">           SUM(votes) AS sum_votes</span>
 <span class="s2">        FROM mayors</span>
 <span class="s2">        WHERE admin_area = &#39;台北市&#39;</span>
-<span class="s2">        GROUP BY candidate;</span>
+<span class="s2">        GROUP BY candidate</span>
+<span class="s2">        ORDER BY number;</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query_str</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
@@ -13707,7 +13384,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13730,6 +13407,7 @@ a.anchor-link {
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>number</th>
       <th>candidate</th>
       <th>sum_votes</th>
     </tr>
@@ -13737,28 +13415,33 @@ a.anchor-link {
   <tbody>
     <tr>
       <th>0</th>
-      <td>丁守中</td>
-      <td>577566</td>
+      <td>1</td>
+      <td>吳蕚洋</td>
+      <td>5617.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>吳蕚洋</td>
-      <td>5617</td>
+      <td>2</td>
+      <td>丁守中</td>
+      <td>577566.0</td>
     </tr>
     <tr>
       <th>2</th>
+      <td>3</td>
       <td>姚文智</td>
-      <td>244641</td>
+      <td>244641.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>李錫錕</td>
-      <td>6172</td>
+      <td>4</td>
+      <td>柯文哲</td>
+      <td>580820.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>柯文哲</td>
-      <td>580820</td>
+      <td>5</td>
+      <td>李錫錕</td>
+      <td>6172.0</td>
     </tr>
   </tbody>
 </table>
@@ -13782,18 +13465,33 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20351;&#29992;-R">&#20351;&#29992; R<a class="anchor-link" href="#&#20351;&#29992;-R">&#182;</a></h2>
+<h2 id="&#33287;-R-&#36899;&#32080;">&#33287; R &#36899;&#32080;<a class="anchor-link" href="#&#33287;-R-&#36899;&#32080;">&#182;</a></h2>
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#22312;-R-&#20013;&#30475;&#34920;&#26684;">&#22312; R &#20013;&#30475;&#34920;&#26684;<a class="anchor-link" href="#&#22312;-R-&#20013;&#30475;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;readr&quot;</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">readr</span><span class="p">)</span>
+<h2 id="&#22914;&#20309;&#21855;&#21205;-RStudio">&#22914;&#20309;&#21855;&#21205; RStudio<a class="anchor-link" href="#&#22914;&#20309;&#21855;&#21205;-RStudio">&#182;</a></h2><p>開始功能表 -&gt; RStudio -&gt; RStudio -&gt; Open a New Script</p>
 
-<span class="n">gapminder</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;https://s3-ap-northeast-1.amazonaws.com/sqlite-demo-data/gapminder.csv&quot;</span><span class="p">)</span>
-<span class="nf">head</span><span class="p">(</span><span class="n">gapminder</span><span class="p">)</span>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#29992;&#20841;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#29992;&#20841;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;<a class="anchor-link" href="#&#29992;&#20841;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#182;</a></h2><ul>
+<li><code>RMySQL</code></li>
+<li><code>DBI</code></li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#23433;&#35037;-RMySQL-&#22871;&#20214;">&#23433;&#35037; <code>RMySQL</code> &#22871;&#20214;<a class="anchor-link" href="#&#23433;&#35037;-RMySQL-&#22871;&#20214;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;RMySQL&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13802,10 +13500,14 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20197;-RSQLite-&#24314;&#31435;&#36899;&#32218;">&#20197; <code>RSQLite</code> &#24314;&#31435;&#36899;&#32218;<a class="anchor-link" href="#&#20197;-RSQLite-&#24314;&#31435;&#36899;&#32218;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;RSQLite&quot;</span><span class="p">)</span>
-<span class="nf">library</span><span class="p">(</span><span class="n">DBI</span><span class="p">)</span>
+<h2 id="&#24314;&#31435;&#36899;&#32218;">&#24314;&#31435;&#36899;&#32218;<a class="anchor-link" href="#&#24314;&#31435;&#36899;&#32218;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">DBI</span><span class="p">)</span>
 
-<span class="n">conn</span> <span class="o">&lt;-</span> <span class="nf">dbConnect</span><span class="p">(</span><span class="n">RSQLite</span><span class="o">::</span><span class="nf">SQLite</span><span class="p">(),</span> <span class="s">&quot;demo.db&quot;</span><span class="p">)</span>
+<span class="n">con</span> <span class="o">&lt;-</span> <span class="nf">dbConnect</span><span class="p">(</span><span class="n">RMySQL</span><span class="o">::</span><span class="nf">MySQL</span><span class="p">(),</span> 
+                 <span class="n">dbname</span> <span class="o">=</span> <span class="s">&quot;nba&quot;</span><span class="p">,</span>
+                 <span class="n">host</span> <span class="o">=</span> <span class="s">&quot;rsqltrain.ced04jhfjfgi.ap-northeast-1.rds.amazonaws.com&quot;</span><span class="p">,</span>
+                 <span class="n">port</span> <span class="o">=</span> <span class="m">3306</span><span class="p">,</span>
+                 <span class="n">user</span> <span class="o">=</span> <span class="s">&quot;trainstudent&quot;</span><span class="p">,</span>
+                 <span class="n">password</span> <span class="o">=</span> <span class="s">&quot;csietrain&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13814,7 +13516,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20197;-DBI::dbWriteTable()-&#24314;&#31435;&#34920;&#26684;">&#20197; <code>DBI::dbWriteTable()</code> &#24314;&#31435;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-DBI::dbWriteTable()-&#24314;&#31435;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">dbWriteTable</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s">&quot;gapminder&quot;</span><span class="p">,</span> <span class="n">gapminder</span><span class="p">)</span>
+<h2 id="&#20197;-dbListTables()-&#21015;&#20986;&#36039;&#26009;&#24235;&#20013;&#30340;&#34920;&#26684;">&#20197; <code>dbListTables()</code> &#21015;&#20986;&#36039;&#26009;&#24235;&#20013;&#30340;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-dbListTables()-&#21015;&#20986;&#36039;&#26009;&#24235;&#20013;&#30340;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">dbListTables</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13823,22 +13525,20 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20197;-DBI::dbListTables()-&#21015;&#20986;&#36039;&#26009;&#24235;&#20013;&#30340;&#34920;&#26684;">&#20197; <code>DBI::dbListTables()</code> &#21015;&#20986;&#36039;&#26009;&#24235;&#20013;&#30340;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-DBI::dbListTables()-&#21015;&#20986;&#36039;&#26009;&#24235;&#20013;&#30340;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">dbListTables</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20197;-DBI::dbSendQuery()-&#26597;&#35426;&#34920;&#26684;">&#20197; <code>DBI::dbSendQuery()</code> &#26597;&#35426;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-DBI::dbSendQuery()-&#26597;&#35426;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">query_str</span> <span class="o">&lt;-</span> <span class="s">&quot;</span>
-<span class="s">    SELECT continent,</span>
-<span class="s">           SUM(pop) AS sum_pop</span>
-<span class="s">        FROM gapminder</span>
-<span class="s">        GROUP BY continent;</span>
+<h2 id="&#20197;-dbSendQuery()-&#26597;&#35426;&#34920;&#26684;">&#20197; <code>dbSendQuery()</code> &#26597;&#35426;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-dbSendQuery()-&#26597;&#35426;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">query_str</span> <span class="o">&lt;-</span> <span class="s">&quot;</span>
+<span class="s">    SELECT *</span>
+<span class="s">        FROM nba_teams;</span>
 <span class="s">&quot;</span>
 <span class="nf">dbGetQuery</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">query_str</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20197;-dbDisconnect()-&#20013;&#26039;&#36899;&#32218;">&#20197; <code>dbDisconnect()</code> &#20013;&#26039;&#36899;&#32218;<a class="anchor-link" href="#&#20197;-dbDisconnect()-&#20013;&#26039;&#36899;&#32218;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="nf">dbDisconnect</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
 </pre></div>
 
 </div>
