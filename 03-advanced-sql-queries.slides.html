@@ -16091,7 +16091,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ans</span>
@@ -16107,7 +16107,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[41]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -16606,7 +16606,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ans</span>
@@ -16622,7 +16622,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -17121,7 +17121,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ans</span>
@@ -17137,7 +17137,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[45]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -17605,7 +17605,315 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section></section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#21443;&#32771;&#35299;&#31572;">&#38568;&#22530;&#32244;&#32722;&#21443;&#32771;&#35299;&#31572;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#21443;&#32771;&#35299;&#31572;">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*使用子查詢從 nba.nba_players 找出 ppg 比 Stephen Curry 高的球員*/</span>
+<span class="k">SELECT</span> <span class="n">personName</span>
+    <span class="k">FROM</span> <span class="n">nba_players</span>
+    <span class="k">WHERE</span> <span class="n">ppg</span> <span class="o">&gt;</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="n">ppg</span> <span class="k">FROM</span> <span class="n">nba_players</span> <span class="k">WHERE</span> <span class="n">personName</span> <span class="o">=</span> <span class="s1">&#39;Stephen Curry&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*使用子查詢從 nba.nba_teams 找出與 Toronto Raptors 同一個 Conference 的球隊*/</span>
+<span class="k">SELECT</span> <span class="n">fullName</span><span class="p">,</span>
+       <span class="n">confName</span>
+    <span class="k">FROM</span> <span class="n">nba_teams</span>
+    <span class="k">WHERE</span> <span class="n">confName</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="n">confName</span> <span class="k">FROM</span> <span class="n">nba_teams</span> <span class="k">WHERE</span> <span class="n">fullName</span> <span class="o">=</span> <span class="s1">&#39;Toronto Raptors&#39;</span>
+    <span class="p">);</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*使用子查詢從 nba.nba_teams 找出與 Boston Celtics、Dallas Mavericks 同一個 Division 的球隊*/</span>
+<span class="k">SELECT</span> <span class="n">fullName</span><span class="p">,</span>
+       <span class="n">divName</span>
+    <span class="k">FROM</span> <span class="n">nba_teams</span>
+    <span class="k">WHERE</span> <span class="n">divName</span> <span class="k">IN</span> <span class="p">(</span>
+        <span class="k">SELECT</span> <span class="n">divName</span> <span class="k">FROM</span> <span class="n">nba_teams</span> <span class="k">WHERE</span> <span class="n">fullName</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Boston Celtics&#39;</span><span class="p">,</span> <span class="s1">&#39;Dallas Mavericks&#39;</span><span class="p">)</span>
+    <span class="p">);</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*從 nba.nba_teams 找出城市名稱小於等於 6 個英文字母的球隊，像是 Miami、Boston...etc.*/</span>
+<span class="k">SELECT</span> <span class="n">fullName</span><span class="p">,</span>
+       <span class="n">city</span>
+    <span class="k">FROM</span> <span class="n">nba_teams</span>
+    <span class="k">WHERE</span> <span class="k">LENGTH</span><span class="p">(</span><span class="n">city</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">6</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*利用 CONCAT() 函數將 nba.player_profile 的 firstName 與 lastName 連結起來為 playerName*/</span>
+<span class="k">SELECT</span> <span class="n">firstName</span><span class="p">,</span>
+       <span class="n">lastName</span><span class="p">,</span>
+       <span class="n">CONCAT</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">lastName</span><span class="p">)</span> <span class="k">AS</span> <span class="n">playerName</span>
+    <span class="k">FROM</span> <span class="n">player_profile</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 nba.player_career_summary 中有幾個球員的場均得分 ppg 超過 20 分？*/</span>
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">n_players</span>
+    <span class="k">FROM</span> <span class="n">player_career_summary</span>
+    <span class="k">WHERE</span> <span class="n">ppg</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 nba.nba_teams 中央組（Central）與西南組（Southwest）共有幾支球隊？*/</span>
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">n_teams</span>
+    <span class="k">FROM</span> <span class="n">nba_teams</span>
+    <span class="k">WHERE</span> <span class="n">divName</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Central&#39;</span><span class="p">,</span> <span class="s1">&#39;Southwest&#39;</span><span class="p">);</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2018.mayors 中丁守中與柯文哲的總票數各為？*/</span>
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
+    <span class="k">FROM</span> <span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">candidate</span> <span class="o">=</span> <span class="s1">&#39;丁守中&#39;</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
+    <span class="k">FROM</span> <span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">candidate</span> <span class="o">=</span> <span class="s1">&#39;柯文哲&#39;</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2018.mayors 中國國民黨、民主進步黨各自得到多少總票數？*/</span>
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">party</span> <span class="o">=</span> <span class="s1">&#39;中國國民黨&#39;</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">party</span> <span class="o">=</span> <span class="s1">&#39;民主進步黨&#39;</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2018.mayors 台北市共有幾個投票所 office？台北市大安區有幾個投票所？*/</span>
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="p">(</span><span class="n">office</span><span class="p">))</span> <span class="k">AS</span> <span class="n">n_office</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="o">=</span> <span class="s1">&#39;台北市&#39;</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="p">(</span><span class="n">office</span><span class="p">))</span> <span class="k">AS</span> <span class="n">n_office</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">district</span> <span class="o">=</span> <span class="s1">&#39;大安區&#39;</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 nba.nba_teams 美國職籃聯盟各區有哪些 Divisions*/</span>
+<span class="k">SELECT</span> <span class="n">confName</span><span class="p">,</span>
+       <span class="n">divName</span>
+    <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">nba_teams</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">divName</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">confName</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 nba.nba_teams 美國職籃聯盟各個 Divisions 有幾支球隊？*/</span>
+<span class="k">SELECT</span> <span class="n">confName</span><span class="p">,</span>
+       <span class="n">divName</span><span class="p">,</span>
+       <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">n_teams</span>
+    <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">nba_teams</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">divName</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">confName</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2018.mayors 台北市的行政區各自有幾個投票所？*/</span>
+<span class="k">SELECT</span> <span class="n">admin_area</span><span class="p">,</span>
+       <span class="n">district</span><span class="p">,</span>
+       <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="p">(</span><span class="n">office</span><span class="p">))</span> <span class="k">AS</span> <span class="n">n_office</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="o">=</span> <span class="s1">&#39;台北市&#39;</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">district</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2018.mayors 六都各候選人的得票數分別為何？*/</span>
+<span class="k">SELECT</span> <span class="n">admin_area</span><span class="p">,</span>
+       <span class="nb">number</span><span class="p">,</span>
+       <span class="n">candidate</span><span class="p">,</span>
+       <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;台北市&#39;</span><span class="p">,</span> <span class="s1">&#39;新北市&#39;</span><span class="p">,</span> <span class="s1">&#39;桃園市&#39;</span><span class="p">,</span> <span class="s1">&#39;台中市&#39;</span><span class="p">,</span> <span class="s1">&#39;台南市&#39;</span><span class="p">,</span> <span class="s1">&#39;高雄市&#39;</span><span class="p">)</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">candidate</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">admin_area</span><span class="p">,</span> <span class="nb">number</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2018.mayors 各黨得到多少總票數？*/</span>
+<span class="k">SELECT</span> <span class="n">party</span><span class="p">,</span>
+       <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">party</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">ttl_votes</span> <span class="k">DESC</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2018.mayors 總票數超過 5 萬票的政黨與其票數為何？*/</span>
+<span class="k">SELECT</span> <span class="n">party</span><span class="p">,</span>
+       <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
+    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">party</span>
+    <span class="k">HAVING</span> <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">50000</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">ttl_votes</span> <span class="k">DESC</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*查詢 nba 資料庫中多倫多暴龍隊的球員陣容顯示 personId、firstName 與 lastName*/</span>
+<span class="k">SELECT</span> <span class="n">left_tbl</span><span class="p">.</span><span class="n">personId</span><span class="p">,</span>
+       <span class="n">right_tbl</span><span class="p">.</span><span class="n">firstName</span><span class="p">,</span>
+       <span class="n">right_tbl</span><span class="p">.</span><span class="n">lastName</span>
+    <span class="k">FROM</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">team_roster</span> <span class="k">WHERE</span> <span class="n">urlName</span> <span class="o">=</span> <span class="s1">&#39;raptors&#39;</span><span class="p">)</span> <span class="n">left_tbl</span>
+    <span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_profile</span><span class="p">)</span> <span class="n">right_tbl</span>
+    <span class="k">ON</span> <span class="n">left_tbl</span><span class="p">.</span><span class="n">personId</span> <span class="o">=</span> <span class="n">right_tbl</span><span class="p">.</span><span class="n">personId</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*內部聯結 nba.player_salary、nba.player_profile 與 nba.player_career_summary 顯示 playerName、playerSalary、ppg、rpg、apg 並檢查連結前後的列數*/</span>
+<span class="k">SELECT</span> <span class="n">salary</span><span class="p">.</span><span class="n">playerName</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">ppg</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">rpg</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">apg</span>
+    <span class="k">FROM</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_salary</span><span class="p">)</span> <span class="n">salary</span>
+    <span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span><span class="p">,</span> <span class="n">CONCAT</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">lastName</span><span class="p">)</span> <span class="k">AS</span> <span class="n">playerName</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_profile</span><span class="p">)</span> <span class="n">profile</span>
+    <span class="k">ON</span> <span class="n">salary</span><span class="p">.</span><span class="n">playerName</span> <span class="o">=</span> <span class="n">profile</span><span class="p">.</span><span class="n">playerName</span>
+    <span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_career_summary</span><span class="p">)</span> <span class="n">career_summary</span>
+    <span class="k">ON</span> <span class="n">profile</span><span class="p">.</span><span class="n">personId</span> <span class="o">=</span> <span class="n">career_summary</span><span class="p">.</span><span class="n">personId</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*左外部聯結 nba.player_salary、nba.player_profile 與 nba.player_career_summary 顯示 playerName、playerSalary、ppg、rpg、apg 並檢查連結前後的列數*/</span>
+<span class="k">SELECT</span> <span class="n">salary</span><span class="p">.</span><span class="n">playerName</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">ppg</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">rpg</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">apg</span>
+    <span class="k">FROM</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_salary</span><span class="p">)</span> <span class="n">salary</span>
+    <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span><span class="p">,</span> <span class="n">CONCAT</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">lastName</span><span class="p">)</span> <span class="k">AS</span> <span class="n">playerName</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_profile</span><span class="p">)</span> <span class="n">profile</span>
+    <span class="k">ON</span> <span class="n">salary</span><span class="p">.</span><span class="n">playerName</span> <span class="o">=</span> <span class="n">profile</span><span class="p">.</span><span class="n">playerName</span>
+    <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_career_summary</span><span class="p">)</span> <span class="n">career_summary</span>
+    <span class="k">ON</span> <span class="n">profile</span><span class="p">.</span><span class="n">personId</span> <span class="o">=</span> <span class="n">career_summary</span><span class="p">.</span><span class="n">personId</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="cm">/*右外部聯結 nba.player_salary、nba.player_profile 與 nba.player_career_summary 顯示 playerName、playerSalary、ppg、rpg、apg 並檢查連結前後的列數*/</span>
+<span class="k">SELECT</span> <span class="n">salary</span><span class="p">.</span><span class="n">playerName</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">ppg</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">rpg</span><span class="p">,</span>
+       <span class="n">career_summary</span><span class="p">.</span><span class="n">apg</span>
+    <span class="k">FROM</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_salary</span><span class="p">)</span> <span class="n">salary</span>
+    <span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span><span class="p">,</span> <span class="n">CONCAT</span><span class="p">(</span><span class="n">firstName</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">lastName</span><span class="p">)</span> <span class="k">AS</span> <span class="n">playerName</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_profile</span><span class="p">)</span> <span class="n">profile</span>
+    <span class="k">ON</span> <span class="n">salary</span><span class="p">.</span><span class="n">playerName</span> <span class="o">=</span> <span class="n">profile</span><span class="p">.</span><span class="n">playerName</span>
+    <span class="k">RIGHT</span> <span class="k">JOIN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">player_career_summary</span><span class="p">)</span> <span class="n">career_summary</span>
+    <span class="k">ON</span> <span class="n">profile</span><span class="p">.</span><span class="n">personId</span> <span class="o">=</span> <span class="n">career_summary</span><span class="p">.</span><span class="n">personId</span><span class="p">;</span>
+</pre></div>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
