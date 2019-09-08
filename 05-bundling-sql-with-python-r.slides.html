@@ -13280,10 +13280,11 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#29992;&#19977;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#29992;&#19977;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;<a class="anchor-link" href="#&#29992;&#19977;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#182;</a></h2><ul>
+<h2 id="&#29992;&#22235;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#29992;&#22235;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;<a class="anchor-link" href="#&#29992;&#22235;&#20491;&#22871;&#20214;&#36899;&#32218;&#33287;&#26597;&#35426;">&#182;</a></h2><ul>
 <li><code>pymysql</code></li>
 <li><code>sqlalchemy</code></li>
 <li><code>pandas</code></li>
+<li><code>mysqlclient</code></li>
 </ul>
 
 </div>
@@ -13294,8 +13295,8 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Uncomment the code below to install pymysql, sqlalchemy, and pandas</span>
-<span class="c1"># !pip install pymysql sqlalchemy pandas</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Uncomment the code below to install pymysql, sqlalchemy, mysqlclient, and pandas</span>
+<span class="c1"># !pip install pymysql sqlalchemy pandas mysqlclient</span>
 </pre></div>
 
     </div>
@@ -13334,14 +13335,14 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;rsqltrain.ced04jhfjfgi.ap-northeast-1.rds.amazonaws.com&quot;</span>
 <span class="n">port</span> <span class="o">=</span> <span class="mi">3306</span>
-<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;trainadmin&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;trainstudent&quot;</span>
 <span class="n">passwd</span> <span class="o">=</span> <span class="s2">&quot;csietrain&quot;</span>
-<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;tw_election_2018&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;nba&quot;</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;mysql+mysqldb://</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">@</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">passwd</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">dbname</span><span class="p">))</span>
 </pre></div>
 
@@ -13363,13 +13364,9 @@ a.anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query_str</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    SELECT number,</span>
-<span class="s2">           candidate,</span>
-<span class="s2">           SUM(votes) AS sum_votes</span>
-<span class="s2">        FROM mayors</span>
-<span class="s2">        WHERE admin_area = &#39;台北市&#39;</span>
-<span class="s2">        GROUP BY candidate</span>
-<span class="s2">        ORDER BY number;</span>
+<span class="s2">    SELECT *</span>
+<span class="s2">        FROM nba_teams</span>
+<span class="s2">        LIMIT 10;</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query_str</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
 </pre></div>
@@ -13407,41 +13404,170 @@ a.anchor-link {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>number</th>
-      <th>candidate</th>
-      <th>sum_votes</th>
+      <th>altCityName</th>
+      <th>city</th>
+      <th>confName</th>
+      <th>divName</th>
+      <th>fullName</th>
+      <th>isAllStar</th>
+      <th>isNBAFranchise</th>
+      <th>nickname</th>
+      <th>teamId</th>
+      <th>teamShortName</th>
+      <th>tricode</th>
+      <th>urlName</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
+      <td>Atlanta</td>
+      <td>Atlanta</td>
+      <td>East</td>
+      <td>Southeast</td>
+      <td>Atlanta Hawks</td>
+      <td>0</td>
       <td>1</td>
-      <td>吳蕚洋</td>
-      <td>5617.0</td>
+      <td>Hawks</td>
+      <td>1610612737</td>
+      <td>Atlanta</td>
+      <td>ATL</td>
+      <td>hawks</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
+      <td>Boston</td>
+      <td>Boston</td>
+      <td>East</td>
+      <td>Atlantic</td>
+      <td>Boston Celtics</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Celtics</td>
+      <td>1610612738</td>
+      <td>Boston</td>
+      <td>BOS</td>
+      <td>celtics</td>
+    </tr>
+    <tr>
       <td>2</td>
-      <td>丁守中</td>
-      <td>577566.0</td>
+      <td>Brooklyn</td>
+      <td>Brooklyn</td>
+      <td>East</td>
+      <td>Atlantic</td>
+      <td>Brooklyn Nets</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Nets</td>
+      <td>1610612751</td>
+      <td>Brooklyn</td>
+      <td>BKN</td>
+      <td>nets</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>3</td>
-      <td>姚文智</td>
-      <td>244641.0</td>
+      <td>Charlotte</td>
+      <td>Charlotte</td>
+      <td>East</td>
+      <td>Southeast</td>
+      <td>Charlotte Hornets</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Hornets</td>
+      <td>1610612766</td>
+      <td>Charlotte</td>
+      <td>CHA</td>
+      <td>hornets</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>4</td>
-      <td>柯文哲</td>
-      <td>580820.0</td>
+      <td>Chicago</td>
+      <td>Chicago</td>
+      <td>East</td>
+      <td>Central</td>
+      <td>Chicago Bulls</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Bulls</td>
+      <td>1610612741</td>
+      <td>Chicago</td>
+      <td>CHI</td>
+      <td>bulls</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>5</td>
-      <td>李錫錕</td>
-      <td>6172.0</td>
+      <td>Cleveland</td>
+      <td>Cleveland</td>
+      <td>East</td>
+      <td>Central</td>
+      <td>Cleveland Cavaliers</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Cavaliers</td>
+      <td>1610612739</td>
+      <td>Cleveland</td>
+      <td>CLE</td>
+      <td>cavaliers</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Dallas</td>
+      <td>Dallas</td>
+      <td>West</td>
+      <td>Southwest</td>
+      <td>Dallas Mavericks</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mavericks</td>
+      <td>1610612742</td>
+      <td>Dallas</td>
+      <td>DAL</td>
+      <td>mavericks</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Denver</td>
+      <td>Denver</td>
+      <td>West</td>
+      <td>Northwest</td>
+      <td>Denver Nuggets</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Nuggets</td>
+      <td>1610612743</td>
+      <td>Denver</td>
+      <td>DEN</td>
+      <td>nuggets</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Detroit</td>
+      <td>Detroit</td>
+      <td>East</td>
+      <td>Central</td>
+      <td>Detroit Pistons</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Pistons</td>
+      <td>1610612765</td>
+      <td>Detroit</td>
+      <td>DET</td>
+      <td>pistons</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Golden State</td>
+      <td>Golden State</td>
+      <td>West</td>
+      <td>Pacific</td>
+      <td>Golden State Warriors</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Warriors</td>
+      <td>1610612744</td>
+      <td>Golden State</td>
+      <td>GSW</td>
+      <td>warriors</td>
     </tr>
   </tbody>
 </table>
@@ -13525,9 +13651,10 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20197;-dbSendQuery()-&#26597;&#35426;&#34920;&#26684;">&#20197; <code>dbSendQuery()</code> &#26597;&#35426;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-dbSendQuery()-&#26597;&#35426;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">query_str</span> <span class="o">&lt;-</span> <span class="s">&quot;</span>
+<h2 id="&#20197;-dbGetQuery()-&#26597;&#35426;&#34920;&#26684;">&#20197; <code>dbGetQuery()</code> &#26597;&#35426;&#34920;&#26684;<a class="anchor-link" href="#&#20197;-dbGetQuery()-&#26597;&#35426;&#34920;&#26684;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="n">query_str</span> <span class="o">&lt;-</span> <span class="s">&quot;</span>
 <span class="s">    SELECT *</span>
-<span class="s">        FROM nba_teams;</span>
+<span class="s">        FROM nba_teams</span>
+<span class="s">        LIMIT 10;</span>
 <span class="s">&quot;</span>
 <span class="nf">dbGetQuery</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">query_str</span><span class="p">)</span>
 </pre></div>
