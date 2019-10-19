@@ -60,6 +60,7 @@ Contact me: <tony@kyosei.ai>
 - [SQL 深入淺出](https://www.tenlong.com.tw/products/9789866840166)
 - [進擊的資料科學](https://www.books.com.tw/products/0010827812)
 - [進擊的資料科學：網頁版](https://www.datainpoint.com/data-science-in-action/)
+
 <!---
 - [DataCamp: SQL Courses](https://www.datacamp.com/courses/tech:sql?tap_a=5644-dce66f&tap_s=194899-1fb421)
 --->
