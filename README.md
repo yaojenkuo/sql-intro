@@ -14,8 +14,11 @@ Contact me: <tony@kyosei.ai>
 
 <https://www.sli.do/>
 
+頻道代號：L919
+
 ### 繳交作業表單
 
+- [320 期假日專題班](https://forms.gle/gi1KUebfeh5qvdq1A)
 - [319 期假日專題班 08.25-09.08](https://forms.gle/ApdUYmKoeLQcCLos9)
 - [319 期假日專題班 08.10-08.24](https://forms.gle/v6TRAtDQ23r38CVKA)
 - [318 期假日專題班](https://forms.gle/i8RBd66JvqA2d6iZ6)
@@ -37,12 +40,14 @@ Contact me: <tony@kyosei.ai>
 |作業 2(Free)|[SQLZOO 練習題（二） 1~5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
 |作業 3(Free)|[SQLZOO 練習題（三） 1~8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
 |作業 4(Free)|[SQLZOO 練習題（四） 1~10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
+<!---
 |作業 5(Paid)|[Intro to SQL for Data Science](http://datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
 |作業 6(Paid)|[Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
+--->
 
 ### 課程大綱
 
-- [關於](00-about.slides.html)
+- [關於](https://yaojenkuo.io/00-about.slides.html)
 - [起步走](01-getting-started.slides.html)
 - [基礎 SQL 資料庫查詢](02-basic-sql-queries.slides.html)
 - [進階 SQL 資料庫查詢](03-advanced-sql-queries.slides.html)
@@ -54,10 +59,13 @@ Contact me: <tony@kyosei.ai>
 - [SQL 深入淺出](https://www.tenlong.com.tw/products/9789866840166)
 - [進擊的資料科學](https://www.books.com.tw/products/0010827812)
 - [進擊的資料科學：網頁版](https://www.datainpoint.com/data-science-in-action/)
+<!---
 - [DataCamp: SQL Courses](https://www.datacamp.com/courses/tech:sql?tap_a=5644-dce66f&tap_s=194899-1fb421)
+--->
 
 ### 近期上課錄影
 
+- [320 期假日專題班]()
 - [319 期假日專題班 08.25-09.08](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU2xv4C1i8BRvDY-2EpsIQ7)
 - [319 期假日專題班 08.10-08.24](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWPTAVsRU8GCmWpTfYB9Alv)
 - [318 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuW-eod7wIisXVGkjn1-Bbxa)
