@@ -13386,8 +13386,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SQL-&#26597;&#35426;&#65306;SELECT">SQL &#26597;&#35426;&#65306;SELECT<a class="anchor-link" href="#SQL-&#26597;&#35426;&#65306;SELECT">&#182;</a></h2><p>選擇表格中的變數</p>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="s1">&#39;Hello World&#39;</span><span class="p">;</span>
+<h2 id="&#20687;&#20351;&#29992;-print-&#19968;&#33324;&#22320;&#20351;&#29992;-SELECT">&#20687;&#20351;&#29992; <code>print</code> &#19968;&#33324;&#22320;&#20351;&#29992; <code>SELECT</code><a class="anchor-link" href="#&#20687;&#20351;&#29992;-print-&#19968;&#33324;&#22320;&#20351;&#29992;-SELECT">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="s1">&#39;Hello World&#39;</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -13396,7 +13395,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SQL-&#26597;&#35426;&#65306;FROM">SQL &#26597;&#35426;&#65306;FROM<a class="anchor-link" href="#SQL-&#26597;&#35426;&#65306;FROM">&#182;</a></h2><p>指定從哪個表格中選擇哪些變數</p>
+<h2 id="FROM"><code>FROM</code><a class="anchor-link" href="#FROM">&#182;</a></h2><p>指定從哪個表格中選擇哪些變數</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span> 
        <span class="n">Continent</span><span class="p">,</span> 
        <span class="n">Population</span>
@@ -13865,9 +13864,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20351;&#29992;&#20989;&#25976;">&#20351;&#29992;&#20989;&#25976;<a class="anchor-link" href="#&#20351;&#29992;&#20989;&#25976;">&#182;</a></h2><ul>
-<li><code>ROUND(, decimal)</code> 函數可以調整小數點位數</li>
-</ul>
+<h2 id="&#20351;&#29992;&#20989;&#25976;">&#20351;&#29992;&#20989;&#25976;<a class="anchor-link" href="#&#20351;&#29992;&#20989;&#25976;">&#182;</a></h2><p><code>ROUND(, decimal)</code> 函數可以調整小數點位數</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
        <span class="n">ROUND</span><span class="p">(</span><span class="n">GNP</span><span class="o">/</span><span class="n">Population</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">AS</span> <span class="n">gnp_percap</span>
   <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span><span class="p">;</span>
@@ -14391,22 +14388,10 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;">WHERE &#25944;&#36848;<a class="anchor-link" href="#WHERE-&#25944;&#36848;">&#182;</a></h2><p>查詢法國的人口數</p>
-<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Population</span>
+<h2 id="&#26597;&#35426;&#27861;&#22283;&#30340;&#20154;&#21475;&#25976;">&#26597;&#35426;&#27861;&#22283;&#30340;&#20154;&#21475;&#25976;<a class="anchor-link" href="#&#26597;&#35426;&#27861;&#22283;&#30340;&#20154;&#21475;&#25976;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Population</span>
     <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
     <span class="k">WHERE</span> <span class="n">Name</span> <span class="o">=</span> <span class="s1">&#39;France&#39;</span><span class="p">;</span>
 </pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;">WHERE &#25944;&#36848;<a class="anchor-link" href="#WHERE-&#25944;&#36848;">&#182;</a></h2><ul>
-<li>等號的意義？</li>
-<li>單引號的意義？</li>
-</ul>
 
 </div>
 </div>
@@ -15295,7 +15280,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">WHERE &#25944;&#36848;&#65306;&#32879;&#38598;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+<h2 id="&#20197;-OR-&#25551;&#36848;&#32879;&#38598;">&#20197; <code>OR</code> &#25551;&#36848;&#32879;&#38598;<a class="anchor-link" href="#&#20197;-OR-&#25551;&#36848;&#32879;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
        <span class="n">Population</span>
   <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
   <span class="k">WHERE</span> <span class="n">Name</span> <span class="o">=</span> <span class="s1">&#39;Brazil&#39;</span> <span class="k">OR</span>
@@ -15309,7 +15294,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">WHERE &#25944;&#36848;&#65306;&#32879;&#38598;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#32879;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+<h2 id="&#20197;-IN-&#25551;&#36848;&#32879;&#38598;">&#20197; <code>IN</code> &#25551;&#36848;&#32879;&#38598;<a class="anchor-link" href="#&#20197;-IN-&#25551;&#36848;&#32879;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
        <span class="n">Population</span>
   <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
   <span class="k">WHERE</span> <span class="n">Name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;Brazil&#39;</span><span class="p">,</span> <span class="s1">&#39;India&#39;</span><span class="p">,</span> <span class="s1">&#39;China&#39;</span><span class="p">);</span>
@@ -15691,7 +15676,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#20132;&#38598;">WHERE &#25944;&#36848;&#65306;&#20132;&#38598;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#20132;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+<h2 id="&#20197;-AND-&#25551;&#36848;&#20132;&#38598;">&#20197; <code>AND</code> &#25551;&#36848;&#20132;&#38598;<a class="anchor-link" href="#&#20197;-AND-&#25551;&#36848;&#20132;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
        <span class="n">SurfaceArea</span> 
   <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
   <span class="k">WHERE</span> <span class="n">SurfaceArea</span> <span class="o">&gt;</span> <span class="mi">250000</span> <span class="k">AND</span>
@@ -15704,7 +15689,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#36939;&#31639;&#31526;&#65306;BETWEEN">WHERE &#25944;&#36848;&#36939;&#31639;&#31526;&#65306;<code>BETWEEN</code><a class="anchor-link" href="#WHERE-&#25944;&#36848;&#36939;&#31639;&#31526;&#65306;BETWEEN">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
+<h2 id="&#20197;-BETWEEN-&#25551;&#36848;&#20132;&#38598;">&#20197; <code>BETWEEN</code> &#25551;&#36848;&#20132;&#38598;<a class="anchor-link" href="#&#20197;-BETWEEN-&#25551;&#36848;&#20132;&#38598;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
        <span class="n">SurfaceArea</span> 
   <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
   <span class="k">WHERE</span> <span class="n">SurfaceArea</span> <span class="k">BETWEEN</span> <span class="mi">250000</span> <span class="k">AND</span> <span class="mi">300000</span><span class="p">;</span>
@@ -15824,17 +15809,10 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#19981;&#31561;&#26044;&#65292;&#20351;&#29992;-!=-&#36939;&#31639;&#23376;">WHERE &#25944;&#36848;&#65306;&#19981;&#31561;&#26044;&#65292;&#20351;&#29992; <code>!=</code> &#36939;&#31639;&#23376;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#19981;&#31561;&#26044;&#65292;&#20351;&#29992;-!=-&#36939;&#31639;&#23376;">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;">WHERE &#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;">&#182;</a></h2><ul>
-<li>使用 <code>%</code> 在條件中對文字做模糊比對</li>
-<li>使用 <code>LIKE</code> 敘述</li>
-</ul>
+<h2 id="&#20351;&#29992;-!=-&#25551;&#36848;&#19981;&#31561;&#26044;">&#20351;&#29992; <code>!=</code> &#25551;&#36848;&#19981;&#31561;&#26044;<a class="anchor-link" href="#&#20351;&#29992;-!=-&#25551;&#36848;&#19981;&#31561;&#26044;">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span> 
+    <span class="k">FROM</span> <span class="n">nba</span><span class="p">.</span><span class="n">nba_teams</span>
+    <span class="k">WHERE</span> <span class="n">confName</span> <span class="o">!=</span> <span class="s1">&#39;West&#39;</span><span class="p">;</span>
+</pre></div>
 
 </div>
 </div>
@@ -15842,9 +15820,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="WHERE-&#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;">WHERE &#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;<a class="anchor-link" href="#WHERE-&#25944;&#36848;&#65306;&#27169;&#31946;&#27604;&#23565;">&#182;</a></h2><ul>
-<li>選出國名中有 <code>land</code> 的國家名</li>
-</ul>
+<h2 id="&#20351;&#29992;-%-&#33287;-LIKE-&#20316;&#27169;&#31946;&#27604;&#23565;">&#20351;&#29992; <code>%</code> &#33287; <code>LIKE</code> &#20316;&#27169;&#31946;&#27604;&#23565;<a class="anchor-link" href="#&#20351;&#29992;-%-&#33287;-LIKE-&#20316;&#27169;&#31946;&#27604;&#23565;">&#182;</a></h2><p>選出國名中有 <code>land</code> 的國家名</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span>
     <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
     <span class="k">WHERE</span> <span class="n">Name</span> <span class="k">LIKE</span> <span class="s1">&#39;%land%&#39;</span><span class="p">;</span>
@@ -16074,11 +16050,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="ORDER-BY-&#25944;&#36848;"><code>ORDER BY</code> &#25944;&#36848;<a class="anchor-link" href="#ORDER-BY-&#25944;&#36848;">&#182;</a></h2><ul>
-<li>可以選擇依照某一個欄位排序查詢結果</li>
-<li>改為遞減排序：<code>DESC</code></li>
-<li>找出人口數最多的前 10 個國家（<code>LIMIT</code> 敘述）</li>
-</ul>
+<h2 id="&#25913;&#28858;&#36958;&#28187;&#25490;&#24207;&#65306;DESC">&#25913;&#28858;&#36958;&#28187;&#25490;&#24207;&#65306;<code>DESC</code><a class="anchor-link" href="#&#25913;&#28858;&#36958;&#28187;&#25490;&#24207;&#65306;DESC">&#182;</a></h2><p>找出人口數最多的前 10 個國家</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">Name</span><span class="p">,</span>
        <span class="n">Population</span>
   <span class="k">FROM</span> <span class="n">world</span><span class="p">.</span><span class="n">country</span>
