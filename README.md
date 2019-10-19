@@ -40,6 +40,7 @@ Contact me: <tony@kyosei.ai>
 |作業 2|[SQLZOO 練習題（二） 1~5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
 |作業 3|[SQLZOO 練習題（三） 1~8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
 |作業 4|[SQLZOO 練習題（四） 1~10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
+
 <!---
 |作業 5(Paid)|[Intro to SQL for Data Science](http://datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
 |作業 6(Paid)|[Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
