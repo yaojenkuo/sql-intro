@@ -12,9 +12,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 上課互動工具
 
-<https://www.sli.do/>
-
-頻道代號：L919
+<https://www.sli.do/> #L919
 
 ### 繳交作業表單
 
