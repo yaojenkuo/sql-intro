@@ -16,6 +16,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 繳交作業表單
 
+- [321 期假日專題班]()
 - [320 期假日專題班](https://forms.gle/gi1KUebfeh5qvdq1A)
 - [319 期假日專題班 08.25-09.08](https://forms.gle/ApdUYmKoeLQcCLos9)
 - [319 期假日專題班 08.10-08.24](https://forms.gle/v6TRAtDQ23r38CVKA)
@@ -57,6 +58,7 @@ Contact me: <tony@kyosei.ai>
 
 - [SQL 深入淺出](https://www.tenlong.com.tw/products/9789866840166)
 - [進擊的資料科學](https://www.books.com.tw/products/0010827812)
+- [進擊的資料科學：Medium 版](https://medium.com/datainpoint/data-science-in-action/home)
 - [進擊的資料科學：網頁版](https://www.datainpoint.com/data-science-in-action/)
 
 <!---
@@ -65,6 +67,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 近期上課錄影
 
+- [321 期假日專題班]()
 - [320 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX1eb3gEdekyI57x8aPg38z)
 - [319 期假日專題班 08.25-09.08](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU2xv4C1i8BRvDY-2EpsIQ7)
 - [319 期假日專題班 08.10-08.24](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWPTAVsRU8GCmWpTfYB9Alv)
