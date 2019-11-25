@@ -16,7 +16,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 繳交作業表單
 
-- [321 期假日專題班]()
+- [321 期假日專題班](https://forms.gle/d7UHENKNwV5ESuUi8)
 - [320 期假日專題班](https://forms.gle/gi1KUebfeh5qvdq1A)
 - [319 期假日專題班 08.25-09.08](https://forms.gle/ApdUYmKoeLQcCLos9)
 - [319 期假日專題班 08.10-08.24](https://forms.gle/v6TRAtDQ23r38CVKA)
@@ -67,7 +67,7 @@ Contact me: <tony@kyosei.ai>
 
 ### 近期上課錄影
 
-- [321 期假日專題班]()
+- [321 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUhIq8pRaHI4-k5N1DlvfEo)
 - [320 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX1eb3gEdekyI57x8aPg38z)
 - [319 期假日專題班 08.25-09.08](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU2xv4C1i8BRvDY-2EpsIQ7)
 - [319 期假日專題班 08.10-08.24](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWPTAVsRU8GCmWpTfYB9Alv)
