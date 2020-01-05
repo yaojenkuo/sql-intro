@@ -1,5 +1,14 @@
 ## 成為初級資料分析師 | 資料分析入門 SQL
 
+### 322 期上課時間調整公告
+
+- 鼓勵學員投票，2020-01-11（六）停課一次。
+- 322 期上課日期與時間調整為：
+    - 2020-01-05（日）16:30-18:30(2 hours)
+    - 2020-01-12（日）16:30-19:30(3 hours)
+    - 2020-01-18（六）16:30-18:30(2 hours)
+    - 2020-01-19（日）16:30-19:30(3 hours)
+
 ### 簡介
 
 這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在[台灣大學資訊工程學系資訊系統訓練班](https://train.csie.ntu.edu.tw/train/)所開設的資料分析入門 SQL 假日專題班課程網頁，課程時數 10 小時。
@@ -16,6 +25,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 繳交作業表單
 
+- [322 期假日專題班](https://forms.gle/mVAArtraFiwTuW7X8)
 - [321 期假日專題班](https://forms.gle/d7UHENKNwV5ESuUi8)
 - [320 期假日專題班](https://forms.gle/gi1KUebfeh5qvdq1A)
 - [319 期假日專題班 08.25-09.08](https://forms.gle/ApdUYmKoeLQcCLos9)
@@ -67,6 +77,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 近期上課錄影
 
+- [322 期假日專題班]()
 - [321 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUhIq8pRaHI4-k5N1DlvfEo)
 - [320 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX1eb3gEdekyI57x8aPg38z)
 - [319 期假日專題班 08.25-09.08](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU2xv4C1i8BRvDY-2EpsIQ7)
