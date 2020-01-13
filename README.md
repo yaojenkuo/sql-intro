@@ -45,7 +45,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 |編號|連結|分數|
 |---|----|---|
-|作業 1|[SQLZOO 練習題（ㄧ） 1~13](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)|35|
+|作業 1|[SQLZOO 練習題（一） 1~13](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)|35|
 |作業 2|[SQLZOO 練習題（二） 1~5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
 |作業 3|[SQLZOO 練習題（三） 1~8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
 |作業 4|[SQLZOO 練習題（四） 1~10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
