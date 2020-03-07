@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +36,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13069,45 +13068,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13313,7 +13273,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#23531;&#20316;&#39080;&#26684;">&#23531;&#20316;&#39080;&#26684;<a class="anchor-link" href="#&#23531;&#20316;&#39080;&#26684;">&#182;</a></h2><p>程式設計師編寫程式碼的風格，良好的寫作風格能讓程式碼易讀；換言之，寫作風格並不會程式碼執行正確或錯誤。</p>
+<h2 id="&#23531;&#20316;&#39080;&#26684;">&#23531;&#20316;&#39080;&#26684;<a class="anchor-link" href="#&#23531;&#20316;&#39080;&#26684;">&#182;</a></h2><p>程式設計師編寫程式碼的風格，良好的寫作風格能讓程式碼易讀；換言之，寫作風格並不會程式碼執行正確或錯誤；可以參考 <a href="https://www.sqlstyle.guide/zh-tw/">SQL 樣式指南</a>。</p>
 
 </div>
 </div>
@@ -13380,15 +13340,6 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="SELECT-FROM"><code>SELECT FROM</code><a class="anchor-link" href="#SELECT-FROM">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#20687;&#20351;&#29992;-print-&#19968;&#33324;&#22320;&#20351;&#29992;-SELECT">&#20687;&#20351;&#29992; <code>print</code> &#19968;&#33324;&#22320;&#20351;&#29992; <code>SELECT</code><a class="anchor-link" href="#&#20687;&#20351;&#29992;-print-&#19968;&#33324;&#22320;&#20351;&#29992;-SELECT">&#182;</a></h2><div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="s1">&#39;Hello World&#39;</span><span class="p">;</span>
-</pre></div>
-
 </div>
 </div>
 </div></section><section>
@@ -13484,367 +13435,67 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>Stephen Curry</td>
       <td>1.90</td>
       <td>190.0</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>Chris Paul</td>
       <td>1.83</td>
       <td>183.0</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>John Wall</td>
       <td>1.93</td>
       <td>193.0</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>James Harden</td>
       <td>1.96</td>
       <td>196.0</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>Russell Westbrook</td>
       <td>1.90</td>
       <td>190.0</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>LeBron James</td>
-      <td>2.03</td>
-      <td>203.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Blake Griffin</td>
-      <td>2.08</td>
-      <td>208.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Kyle Lowry</td>
-      <td>1.85</td>
-      <td>185.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Paul George</td>
-      <td>2.06</td>
-      <td>206.0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Gordon Hayward</td>
-      <td>2.03</td>
-      <td>203.0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Mike Conley</td>
-      <td>1.85</td>
-      <td>185.0</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Paul Millsap</td>
-      <td>2.03</td>
-      <td>203.0</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Damian Lillard</td>
-      <td>1.90</td>
-      <td>190.0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Kevin Love</td>
-      <td>2.08</td>
-      <td>208.0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>DeMar DeRozan</td>
-      <td>2.01</td>
-      <td>201.0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>CJ McCollum</td>
-      <td>1.90</td>
-      <td>190.0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Nikola Jokic</td>
-      <td>2.13</td>
-      <td>213.0</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Andrew Wiggins</td>
-      <td>2.03</td>
-      <td>203.0</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Karl-Anthony Towns</td>
-      <td>2.13</td>
-      <td>213.0</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Devin Booker</td>
-      <td>1.98</td>
-      <td>198.0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Joel Embiid</td>
-      <td>2.13</td>
-      <td>213.0</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Anthony Davis</td>
-      <td>2.08</td>
-      <td>208.0</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Andre Drummond</td>
-      <td>2.11</td>
-      <td>211.0</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Bradley Beal</td>
-      <td>1.96</td>
-      <td>196.0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Hassan Whiteside</td>
-      <td>2.13</td>
-      <td>213.0</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Jrue Holiday</td>
-      <td>1.93</td>
-      <td>193.0</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>LaMarcus Aldridge</td>
-      <td>2.11</td>
-      <td>211.0</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Giannis Antetokounmpo</td>
-      <td>2.11</td>
-      <td>211.0</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Steven Adams</td>
-      <td>2.13</td>
-      <td>213.0</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Marc Gasol</td>
-      <td>2.16</td>
-      <td>216.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
     </tr>
     <tr>
-      <th>199</th>
-      <td>Ivan Rabb</td>
-      <td>2.08</td>
-      <td>208.0</td>
-    </tr>
-    <tr>
-      <th>200</th>
-      <td>Damyean Dotson</td>
-      <td>1.98</td>
-      <td>198.0</td>
-    </tr>
-    <tr>
-      <th>201</th>
-      <td>Royce O'Neale</td>
-      <td>1.98</td>
-      <td>198.0</td>
-    </tr>
-    <tr>
-      <th>202</th>
-      <td>Antonio Blakeney</td>
-      <td>1.93</td>
-      <td>193.0</td>
-    </tr>
-    <tr>
-      <th>203</th>
-      <td>Monte Morris</td>
-      <td>1.90</td>
-      <td>190.0</td>
-    </tr>
-    <tr>
-      <th>204</th>
-      <td>Alfonzo McKinnie</td>
-      <td>2.03</td>
-      <td>203.0</td>
-    </tr>
-    <tr>
-      <th>205</th>
-      <td>Chris Boucher</td>
-      <td>2.08</td>
-      <td>208.0</td>
-    </tr>
-    <tr>
-      <th>206</th>
-      <td>Malcolm Miller</td>
-      <td>2.01</td>
-      <td>201.0</td>
-    </tr>
-    <tr>
-      <th>207</th>
-      <td>Mitchell Robinson</td>
-      <td>2.16</td>
-      <td>216.0</td>
-    </tr>
-    <tr>
-      <th>208</th>
-      <td>Khyri Thomas</td>
-      <td>1.90</td>
-      <td>190.0</td>
-    </tr>
-    <tr>
-      <th>209</th>
-      <td>Deonte Burton</td>
-      <td>1.96</td>
-      <td>196.0</td>
-    </tr>
-    <tr>
-      <th>210</th>
-      <td>Isaac Bonga</td>
-      <td>2.03</td>
-      <td>203.0</td>
-    </tr>
-    <tr>
-      <th>211</th>
-      <td>Ryan Broekhoff</td>
-      <td>2.01</td>
-      <td>201.0</td>
-    </tr>
-    <tr>
-      <th>212</th>
-      <td>Jalen Brunson</td>
-      <td>1.90</td>
-      <td>190.0</td>
-    </tr>
-    <tr>
-      <th>213</th>
-      <td>Jarred Vanderbilt</td>
-      <td>2.06</td>
-      <td>206.0</td>
-    </tr>
-    <tr>
-      <th>214</th>
-      <td>Bruce Brown</td>
-      <td>1.96</td>
-      <td>196.0</td>
-    </tr>
-    <tr>
-      <th>215</th>
-      <td>Chris Chiozza</td>
-      <td>1.83</td>
-      <td>183.0</td>
-    </tr>
-    <tr>
-      <th>216</th>
-      <td>Gary Clark</td>
-      <td>2.03</td>
-      <td>203.0</td>
-    </tr>
-    <tr>
-      <th>217</th>
-      <td>Isaiah Hartenstein</td>
-      <td>2.13</td>
-      <td>213.0</td>
-    </tr>
-    <tr>
-      <th>218</th>
-      <td>Alize Johnson</td>
-      <td>2.06</td>
-      <td>206.0</td>
-    </tr>
-    <tr>
-      <th>219</th>
-      <td>De'Anthony Melton</td>
-      <td>1.93</td>
-      <td>193.0</td>
-    </tr>
-    <tr>
-      <th>220</th>
-      <td>Keita Bates-Diop</td>
-      <td>2.06</td>
-      <td>206.0</td>
-    </tr>
-    <tr>
-      <th>221</th>
-      <td>Kenrich Williams</td>
-      <td>2.01</td>
-      <td>201.0</td>
-    </tr>
-    <tr>
-      <th>222</th>
-      <td>Hamidou Diallo</td>
-      <td>1.96</td>
-      <td>196.0</td>
-    </tr>
-    <tr>
-      <th>223</th>
-      <td>Jevon Carter</td>
-      <td>1.88</td>
-      <td>188.0</td>
-    </tr>
-    <tr>
-      <th>224</th>
+      <td>224</td>
       <td>Elie Okobo</td>
       <td>1.90</td>
       <td>190.0</td>
     </tr>
     <tr>
-      <th>225</th>
+      <td>225</td>
       <td>Chimezie Metu</td>
       <td>2.08</td>
       <td>208.0</td>
     </tr>
     <tr>
-      <th>226</th>
+      <td>226</td>
       <td>Shaquille Harrison</td>
       <td>1.93</td>
       <td>193.0</td>
     </tr>
     <tr>
-      <th>227</th>
+      <td>227</td>
       <td>Kostas Antetokounmpo</td>
       <td>2.08</td>
       <td>208.0</td>
     </tr>
     <tr>
-      <th>228</th>
+      <td>228</td>
       <td>Daryl Macon</td>
       <td>1.90</td>
       <td>190.0</td>
@@ -13929,427 +13580,77 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>Stephen Curry</td>
       <td>1.90</td>
       <td>86.2</td>
       <td>23.88</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>Chris Paul</td>
       <td>1.83</td>
       <td>79.4</td>
       <td>23.71</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>John Wall</td>
       <td>1.93</td>
       <td>95.3</td>
       <td>25.58</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>James Harden</td>
       <td>1.96</td>
       <td>99.8</td>
       <td>25.98</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>Russell Westbrook</td>
       <td>1.90</td>
       <td>90.7</td>
       <td>25.12</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>LeBron James</td>
-      <td>2.03</td>
-      <td>113.4</td>
-      <td>27.52</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Blake Griffin</td>
-      <td>2.08</td>
-      <td>113.4</td>
-      <td>26.21</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Kyle Lowry</td>
-      <td>1.85</td>
-      <td>88.9</td>
-      <td>25.98</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Paul George</td>
-      <td>2.06</td>
-      <td>99.8</td>
-      <td>23.52</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Gordon Hayward</td>
-      <td>2.03</td>
-      <td>102.1</td>
-      <td>24.78</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Mike Conley</td>
-      <td>1.85</td>
-      <td>79.4</td>
-      <td>23.20</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Paul Millsap</td>
-      <td>2.03</td>
-      <td>111.6</td>
-      <td>27.08</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Damian Lillard</td>
-      <td>1.90</td>
-      <td>88.5</td>
-      <td>24.52</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Kevin Love</td>
-      <td>2.08</td>
-      <td>113.9</td>
-      <td>26.33</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>DeMar DeRozan</td>
-      <td>2.01</td>
-      <td>99.8</td>
-      <td>24.70</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>CJ McCollum</td>
-      <td>1.90</td>
-      <td>86.2</td>
-      <td>23.88</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Nikola Jokic</td>
-      <td>2.13</td>
-      <td>113.4</td>
-      <td>25.00</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Andrew Wiggins</td>
-      <td>2.03</td>
-      <td>88.0</td>
-      <td>21.35</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Karl-Anthony Towns</td>
-      <td>2.13</td>
-      <td>112.5</td>
-      <td>24.80</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Devin Booker</td>
-      <td>1.98</td>
-      <td>95.3</td>
-      <td>24.31</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Joel Embiid</td>
-      <td>2.13</td>
-      <td>113.4</td>
-      <td>25.00</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Anthony Davis</td>
-      <td>2.08</td>
-      <td>114.8</td>
-      <td>26.53</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Andre Drummond</td>
-      <td>2.11</td>
-      <td>126.6</td>
-      <td>28.44</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Bradley Beal</td>
-      <td>1.96</td>
-      <td>93.9</td>
-      <td>24.44</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Hassan Whiteside</td>
-      <td>2.13</td>
-      <td>120.2</td>
-      <td>26.49</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Jrue Holiday</td>
-      <td>1.93</td>
-      <td>93.0</td>
-      <td>24.97</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>LaMarcus Aldridge</td>
-      <td>2.11</td>
-      <td>117.9</td>
-      <td>26.48</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Giannis Antetokounmpo</td>
-      <td>2.11</td>
-      <td>109.8</td>
-      <td>24.66</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Steven Adams</td>
-      <td>2.13</td>
-      <td>120.2</td>
-      <td>26.49</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Marc Gasol</td>
-      <td>2.16</td>
-      <td>115.7</td>
-      <td>24.80</td>
-    </tr>
-    <tr>
-      <th>...</th>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
     </tr>
     <tr>
-      <th>199</th>
-      <td>Ivan Rabb</td>
-      <td>2.08</td>
-      <td>99.8</td>
-      <td>23.07</td>
-    </tr>
-    <tr>
-      <th>200</th>
-      <td>Damyean Dotson</td>
-      <td>1.98</td>
-      <td>95.3</td>
-      <td>24.31</td>
-    </tr>
-    <tr>
-      <th>201</th>
-      <td>Royce O'Neale</td>
-      <td>1.98</td>
-      <td>102.5</td>
-      <td>26.15</td>
-    </tr>
-    <tr>
-      <th>202</th>
-      <td>Antonio Blakeney</td>
-      <td>1.93</td>
-      <td>87.1</td>
-      <td>23.38</td>
-    </tr>
-    <tr>
-      <th>203</th>
-      <td>Monte Morris</td>
-      <td>1.90</td>
-      <td>79.4</td>
-      <td>21.99</td>
-    </tr>
-    <tr>
-      <th>204</th>
-      <td>Alfonzo McKinnie</td>
-      <td>2.03</td>
-      <td>97.5</td>
-      <td>23.66</td>
-    </tr>
-    <tr>
-      <th>205</th>
-      <td>Chris Boucher</td>
-      <td>2.08</td>
-      <td>90.7</td>
-      <td>20.96</td>
-    </tr>
-    <tr>
-      <th>206</th>
-      <td>Malcolm Miller</td>
-      <td>2.01</td>
-      <td>95.3</td>
-      <td>23.59</td>
-    </tr>
-    <tr>
-      <th>207</th>
-      <td>Mitchell Robinson</td>
-      <td>2.16</td>
-      <td>108.9</td>
-      <td>23.34</td>
-    </tr>
-    <tr>
-      <th>208</th>
-      <td>Khyri Thomas</td>
-      <td>1.90</td>
-      <td>95.3</td>
-      <td>26.40</td>
-    </tr>
-    <tr>
-      <th>209</th>
-      <td>Deonte Burton</td>
-      <td>1.96</td>
-      <td>111.1</td>
-      <td>28.92</td>
-    </tr>
-    <tr>
-      <th>210</th>
-      <td>Isaac Bonga</td>
-      <td>2.03</td>
-      <td>81.6</td>
-      <td>19.80</td>
-    </tr>
-    <tr>
-      <th>211</th>
-      <td>Ryan Broekhoff</td>
-      <td>2.01</td>
-      <td>97.5</td>
-      <td>24.13</td>
-    </tr>
-    <tr>
-      <th>212</th>
-      <td>Jalen Brunson</td>
-      <td>1.90</td>
-      <td>86.2</td>
-      <td>23.88</td>
-    </tr>
-    <tr>
-      <th>213</th>
-      <td>Jarred Vanderbilt</td>
-      <td>2.06</td>
-      <td>97.1</td>
-      <td>22.88</td>
-    </tr>
-    <tr>
-      <th>214</th>
-      <td>Bruce Brown</td>
-      <td>1.96</td>
-      <td>91.6</td>
-      <td>23.84</td>
-    </tr>
-    <tr>
-      <th>215</th>
-      <td>Chris Chiozza</td>
-      <td>1.83</td>
-      <td>79.4</td>
-      <td>23.71</td>
-    </tr>
-    <tr>
-      <th>216</th>
-      <td>Gary Clark</td>
-      <td>2.03</td>
-      <td>102.1</td>
-      <td>24.78</td>
-    </tr>
-    <tr>
-      <th>217</th>
-      <td>Isaiah Hartenstein</td>
-      <td>2.13</td>
-      <td>112.9</td>
-      <td>24.88</td>
-    </tr>
-    <tr>
-      <th>218</th>
-      <td>Alize Johnson</td>
-      <td>2.06</td>
-      <td>96.2</td>
-      <td>22.67</td>
-    </tr>
-    <tr>
-      <th>219</th>
-      <td>De'Anthony Melton</td>
-      <td>1.93</td>
-      <td>90.7</td>
-      <td>24.35</td>
-    </tr>
-    <tr>
-      <th>220</th>
-      <td>Keita Bates-Diop</td>
-      <td>2.06</td>
-      <td>103.9</td>
-      <td>24.48</td>
-    </tr>
-    <tr>
-      <th>221</th>
-      <td>Kenrich Williams</td>
-      <td>2.01</td>
-      <td>95.3</td>
-      <td>23.59</td>
-    </tr>
-    <tr>
-      <th>222</th>
-      <td>Hamidou Diallo</td>
-      <td>1.96</td>
-      <td>89.8</td>
-      <td>23.38</td>
-    </tr>
-    <tr>
-      <th>223</th>
-      <td>Jevon Carter</td>
-      <td>1.88</td>
-      <td>88.9</td>
-      <td>25.15</td>
-    </tr>
-    <tr>
-      <th>224</th>
+      <td>224</td>
       <td>Elie Okobo</td>
       <td>1.90</td>
       <td>86.2</td>
       <td>23.88</td>
     </tr>
     <tr>
-      <th>225</th>
+      <td>225</td>
       <td>Chimezie Metu</td>
       <td>2.08</td>
       <td>102.1</td>
       <td>23.60</td>
     </tr>
     <tr>
-      <th>226</th>
+      <td>226</td>
       <td>Shaquille Harrison</td>
       <td>1.93</td>
       <td>86.2</td>
       <td>23.14</td>
     </tr>
     <tr>
-      <th>227</th>
+      <td>227</td>
       <td>Kostas Antetokounmpo</td>
       <td>2.08</td>
       <td>90.7</td>
       <td>20.96</td>
     </tr>
     <tr>
-      <th>228</th>
+      <td>228</td>
       <td>Daryl Macon</td>
       <td>1.90</td>
       <td>83.9</td>
@@ -14399,7 +13700,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20013;&#25152;&#26377;&#39640;&#38596;&#24066;&#30340;&#35722;&#25976;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>tw_election_2018.mayors</code> &#20013;&#25152;&#26377;&#39640;&#38596;&#24066;&#30340;&#35722;&#25976;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2018.mayors-&#20013;&#25152;&#26377;&#39640;&#38596;&#24066;&#30340;&#35722;&#25976;">&#182;</a></h2>
+<h2 id="&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2020.president-&#20013;&#25152;&#26377;&#39640;&#38596;&#24066;&#30340;&#36039;&#26009;">&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426; <code>tw_election_2020.president</code> &#20013;&#25152;&#26377;&#39640;&#38596;&#24066;&#30340;&#36039;&#26009;<a class="anchor-link" href="#&#38568;&#22530;&#32244;&#32722;&#65306;&#26597;&#35426;-tw_election_2020.president-&#20013;&#25152;&#26377;&#39640;&#38596;&#24066;&#30340;&#36039;&#26009;">&#182;</a></h2>
 </div>
 </div>
 </div><div class="fragment">
@@ -14449,686 +13750,124 @@ a.anchor-link {
       <th>village</th>
       <th>office</th>
       <th>number</th>
-      <th>party</th>
-      <th>candidate</th>
+      <th>candidates</th>
       <th>votes</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>高雄市</td>
-      <td>桃源區</td>
-      <td>梅山里</td>
+      <td>鹽埕區</td>
+      <td>藍橋里</td>
+      <td>1304</td>
       <td>1</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>188</td>
+      <td>宋楚瑜/余湘</td>
+      <td>30</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>高雄市</td>
-      <td>桃源區</td>
-      <td>拉芙蘭里</td>
-      <td>2</td>
       <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>158</td>
-    </tr>
-    <tr>
-      <th>2</th>
       <td>高雄市</td>
-      <td>桃源區</td>
-      <td>復興里</td>
-      <td>3</td>
+      <td>鹽埕區</td>
+      <td>慈愛里</td>
+      <td>1305</td>
       <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>214</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>高雄市</td>
-      <td>桃源區</td>
-      <td>勤和里</td>
+      <td>宋楚瑜/余湘</td>
       <td>4</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>165</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>2</td>
       <td>高雄市</td>
-      <td>桃源區</td>
-      <td>桃源里</td>
-      <td>5</td>
+      <td>鹽埕區</td>
+      <td>博愛里</td>
+      <td>1306</td>
       <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>574</td>
+      <td>宋楚瑜/余湘</td>
+      <td>12</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>3</td>
       <td>高雄市</td>
-      <td>桃源區</td>
-      <td>高中里</td>
-      <td>6</td>
+      <td>鹽埕區</td>
+      <td>壽星里</td>
+      <td>1307</td>
       <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>452</td>
+      <td>宋楚瑜/余湘</td>
+      <td>18</td>
     </tr>
     <tr>
-      <th>6</th>
+      <td>4</td>
       <td>高雄市</td>
-      <td>桃源區</td>
-      <td>建山里</td>
-      <td>7</td>
+      <td>鹽埕區</td>
+      <td>中山里</td>
+      <td>1308</td>
       <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>442</td>
+      <td>宋楚瑜/余湘</td>
+      <td>28</td>
     </tr>
     <tr>
-      <th>7</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>6013</td>
       <td>高雄市</td>
       <td>桃源區</td>
       <td>寶山里</td>
       <td>8</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>326</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>59</td>
     </tr>
     <tr>
-      <th>8</th>
+      <td>6014</td>
       <td>高雄市</td>
       <td>那瑪夏區</td>
       <td>達卡努瓦里</td>
       <td>9</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>586</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>76</td>
     </tr>
     <tr>
-      <th>9</th>
+      <td>6015</td>
       <td>高雄市</td>
       <td>那瑪夏區</td>
       <td>達卡努瓦里</td>
       <td>10</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>442</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>114</td>
     </tr>
     <tr>
-      <th>10</th>
+      <td>6016</td>
       <td>高雄市</td>
       <td>那瑪夏區</td>
       <td>瑪雅里</td>
       <td>11</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>456</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>73</td>
     </tr>
     <tr>
-      <th>11</th>
+      <td>6017</td>
       <td>高雄市</td>
       <td>那瑪夏區</td>
       <td>南沙魯里</td>
       <td>12</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>267</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>高雄市</td>
-      <td>甲仙區</td>
-      <td>東安里</td>
-      <td>13</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>153</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>高雄市</td>
-      <td>甲仙區</td>
-      <td>西安里</td>
-      <td>14</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>462</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>高雄市</td>
-      <td>甲仙區</td>
-      <td>和安里</td>
-      <td>15</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>329</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>高雄市</td>
-      <td>甲仙區</td>
-      <td>大田里</td>
-      <td>16</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>662</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>高雄市</td>
-      <td>甲仙區</td>
-      <td>寶隆里</td>
-      <td>17</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>260</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>高雄市</td>
-      <td>甲仙區</td>
-      <td>關山里</td>
-      <td>18</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>256</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>高雄市</td>
-      <td>甲仙區</td>
-      <td>小林里</td>
-      <td>19</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>217</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>新威里</td>
-      <td>20</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>289</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>新興里</td>
-      <td>21</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>227</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>新寮里</td>
-      <td>22</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>293</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>新發里</td>
-      <td>23</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>320</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>荖濃里</td>
-      <td>24</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>469</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>六龜里</td>
-      <td>25</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>294</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>義寶里</td>
-      <td>26</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>382</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>興龍里</td>
-      <td>27</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>257</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>中興里</td>
-      <td>28</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>600</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>寶來里</td>
-      <td>29</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>339</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>高雄市</td>
-      <td>六龜區</td>
-      <td>文武里</td>
-      <td>30</td>
-      <td>1</td>
-      <td>中國國民黨</td>
-      <td>韓國瑜</td>
-      <td>490</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>7262</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>西溪里</td>
-      <td>1794</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>7263</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>西溪里</td>
-      <td>1795</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
       <td>3</td>
-    </tr>
-    <tr>
-      <th>7264</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>港嘴里</td>
-      <td>1796</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>7265</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>北汕里</td>
-      <td>1797</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7266</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>北汕里</td>
-      <td>1798</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>7267</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>林內里</td>
-      <td>1799</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>7268</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>林內里</td>
-      <td>1800</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>7269</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>王公里</td>
-      <td>1801</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>7270</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>王公里</td>
-      <td>1802</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>7271</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>王公里</td>
-      <td>1803</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>7272</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>林家里</td>
-      <td>1804</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>7273</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>龔厝里</td>
-      <td>1805</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>7274</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>龔厝里</td>
-      <td>1806</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>7275</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>鳳芸里</td>
-      <td>1807</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>7276</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>鳳芸里</td>
-      <td>1808</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>7277</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>中芸里</td>
-      <td>1809</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>7278</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>中芸里</td>
-      <td>1810</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>7279</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>東汕里</td>
-      <td>1811</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>7280</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>西汕里</td>
-      <td>1812</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>7281</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>仁愛里</td>
-      <td>1813</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>7282</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>仁愛里</td>
-      <td>1814</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>7283</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>文賢里</td>
-      <td>1815</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>7284</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>文賢里</td>
-      <td>1816</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>7285</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>廣應里</td>
-      <td>1817</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>7286</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>廣應里</td>
-      <td>1818</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>7287</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>廣應里</td>
-      <td>1819</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>7288</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>五福里</td>
-      <td>1820</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>7289</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>五福里</td>
-      <td>1821</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>7290</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>中汕里</td>
-      <td>1822</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>7291</th>
-      <td>高雄市</td>
-      <td>林園區</td>
-      <td>中汕里</td>
-      <td>1823</td>
-      <td>4</td>
-      <td>無黨籍</td>
-      <td>蘇盈貴</td>
-      <td>7</td>
+      <td>蔡英文/賴清德</td>
+      <td>167</td>
     </tr>
   </tbody>
 </table>
-<p>7292 rows × 8 columns</p>
+<p>6018 rows × 7 columns</p>
 </div>
 </div>
 
@@ -15192,77 +13931,77 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>201142</td>
       <td>27</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>202681</td>
       <td>22.2</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>1629029</td>
       <td>21.2</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>201933</td>
       <td>21.9</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>201939</td>
       <td>23.5</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>5</td>
       <td>201935</td>
       <td>24.3</td>
     </tr>
     <tr>
-      <th>6</th>
+      <td>6</td>
       <td>201566</td>
       <td>23</td>
     </tr>
     <tr>
-      <th>7</th>
+      <td>7</td>
       <td>202326</td>
       <td>21.2</td>
     </tr>
     <tr>
-      <th>8</th>
+      <td>8</td>
       <td>203076</td>
       <td>23.7</td>
     </tr>
     <tr>
-      <th>9</th>
+      <td>9</td>
       <td>2544</td>
       <td>27.2</td>
     </tr>
     <tr>
-      <th>10</th>
+      <td>10</td>
       <td>1626157</td>
       <td>22.3</td>
     </tr>
     <tr>
-      <th>11</th>
+      <td>11</td>
       <td>203954</td>
       <td>24.3</td>
     </tr>
     <tr>
-      <th>12</th>
+      <td>12</td>
       <td>1626164</td>
       <td>21.4</td>
     </tr>
     <tr>
-      <th>13</th>
+      <td>13</td>
       <td>203081</td>
       <td>23.5</td>
     </tr>
     <tr>
-      <th>14</th>
+      <td>14</td>
       <td>1628378</td>
       <td>22.1</td>
     </tr>
@@ -15357,307 +14096,57 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>1627761</td>
       <td>6.3</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>1629718</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>203459</td>
       <td>9.5</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>1628981</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>1629164</td>
       <td>1.4</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>1628989</td>
-      <td>9.7</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1629631</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>1627745</td>
-      <td>3.6</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>203458</td>
-      <td>7.9</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>1629629</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>1629034</td>
-      <td>3.9</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>202323</td>
-      <td>9.9</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>1629035</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>1629605</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>1629750</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>1629641</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>1628400</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>1629738</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>203935</td>
-      <td>9.3</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>1629622</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>1628464</td>
-      <td>5.5</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>202954</td>
-      <td>3.9</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>1629682</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>1629684</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>1629057</td>
-      <td>2.5</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>1629061</td>
-      <td>1.7</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>1628386</td>
-      <td>9.6</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>1629651</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>201142</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>1627740</td>
-      <td>4.3</td>
-    </tr>
-    <tr>
-      <th>...</th>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
     </tr>
     <tr>
-      <th>349</th>
-      <td>1628421</td>
-      <td>6.1</td>
-    </tr>
-    <tr>
-      <th>350</th>
-      <td>1629744</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>351</th>
-      <td>1627832</td>
-      <td>8.3</td>
-    </tr>
-    <tr>
-      <th>352</th>
-      <td>1628396</td>
-      <td>2.1</td>
-    </tr>
-    <tr>
-      <th>353</th>
-      <td>1629714</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>354</th>
-      <td>202334</td>
-      <td>6.5</td>
-    </tr>
-    <tr>
-      <th>355</th>
-      <td>203957</td>
-      <td>5.9</td>
-    </tr>
-    <tr>
-      <th>356</th>
-      <td>1629739</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>357</th>
-      <td>204060</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>358</th>
-      <td>1629742</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>359</th>
-      <td>1627777</td>
-      <td>2.9</td>
-    </tr>
-    <tr>
-      <th>360</th>
-      <td>1626220</td>
-      <td>5.1</td>
-    </tr>
-    <tr>
-      <th>361</th>
-      <td>1629671</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>362</th>
-      <td>1628430</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>363</th>
-      <td>1629625</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>364</th>
-      <td>202722</td>
-      <td>6.2</td>
-    </tr>
-    <tr>
-      <th>365</th>
-      <td>1629067</td>
-      <td>0.9</td>
-    </tr>
-    <tr>
-      <th>366</th>
-      <td>1628972</td>
-      <td>4.8</td>
-    </tr>
-    <tr>
-      <th>367</th>
-      <td>1628418</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>368</th>
-      <td>1629060</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>369</th>
-      <td>1629203</td>
-      <td>4.5</td>
-    </tr>
-    <tr>
-      <th>370</th>
-      <td>101133</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>371</th>
-      <td>1629726</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>372</th>
-      <td>203895</td>
-      <td>4.9</td>
-    </tr>
-    <tr>
-      <th>373</th>
-      <td>101139</td>
-      <td>9.6</td>
-    </tr>
-    <tr>
-      <th>374</th>
+      <td>374</td>
       <td>1629341</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>375</th>
+      <td>375</td>
       <td>1629620</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>376</th>
+      <td>376</td>
       <td>1629678</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>377</th>
+      <td>377</td>
       <td>202397</td>
       <td>7.4</td>
     </tr>
     <tr>
-      <th>378</th>
+      <td>378</td>
       <td>1629021</td>
       <td>4.8</td>
     </tr>
@@ -15754,42 +14243,42 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>1629029</td>
       <td>21.2</td>
       <td>6</td>
       <td>7.8</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>203999</td>
       <td>16.3</td>
       <td>5.1</td>
       <td>9.6</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>201935</td>
       <td>24.3</td>
       <td>6.2</td>
       <td>5.2</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>201566</td>
       <td>23</td>
       <td>8.4</td>
       <td>7</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>2544</td>
       <td>27.2</td>
       <td>7.2</td>
       <td>7.4</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>5</td>
       <td>1627732</td>
       <td>16.4</td>
       <td>7.9</td>
@@ -15882,19 +14371,19 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>United Arab Emirates</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>United Kingdom</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>United States Minor Outlying Islands</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>United States</td>
     </tr>
   </tbody>
@@ -15987,52 +14476,52 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>Chris Chiozza</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>Khyri Thomas</td>
       <td>4</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>Zhaire Smith</td>
       <td>6</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>Isaac Bonga</td>
       <td>6</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>Daryl Macon</td>
       <td>6</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>5</td>
       <td>Anfernee Simons</td>
       <td>11</td>
     </tr>
     <tr>
-      <th>6</th>
+      <td>6</td>
       <td>Jacob Evans</td>
       <td>11</td>
     </tr>
     <tr>
-      <th>7</th>
+      <td>7</td>
       <td>Jerome Robinson</td>
       <td>13</td>
     </tr>
     <tr>
-      <th>8</th>
+      <td>8</td>
       <td>Donte DiVincenzo</td>
       <td>19</td>
     </tr>
     <tr>
-      <th>9</th>
+      <td>9</td>
       <td>Hamidou Diallo</td>
       <td>23</td>
     </tr>
@@ -16115,52 +14604,52 @@ a.anchor-link {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>Monte Morris</td>
       <td>5.7358</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>Chris Chiozza</td>
       <td>4.0000</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>Chris Paul</td>
       <td>3.9848</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>Fred VanVleet</td>
       <td>3.4211</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>Tim Frazier</td>
       <td>3.0833</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>5</td>
       <td>Spencer Dinwiddie</td>
       <td>2.9689</td>
     </tr>
     <tr>
-      <th>6</th>
+      <td>6</td>
       <td>Matthew Dellavedova</td>
       <td>2.8973</td>
     </tr>
     <tr>
-      <th>7</th>
+      <td>7</td>
       <td>Mike Conley</td>
       <td>2.8430</td>
     </tr>
     <tr>
-      <th>8</th>
+      <td>8</td>
       <td>Langston Galloway</td>
       <td>2.8238</td>
     </tr>
     <tr>
-      <th>9</th>
+      <td>9</td>
       <td>Yogi Ferrell</td>
       <td>2.7128</td>
     </tr>
@@ -16212,9 +14701,9 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="cm">/* 查詢 tw_election_2018.mayors 中所有高雄市的變數 */</span>
+<div class="highlight"><pre><span></span><span class="cm">/* 查詢 tw_election_2020.president 中所有高雄市的資料 */</span>
 <span class="k">SELECT</span> <span class="o">*</span>
-    <span class="k">FROM</span> <span class="n">tw_election_2018</span><span class="p">.</span><span class="n">mayors</span>
+    <span class="k">FROM</span> <span class="n">president</span>
     <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="o">=</span> <span class="s1">&#39;高雄市&#39;</span><span class="p">;</span>
 </pre></div>
 
