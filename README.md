@@ -1,14 +1,5 @@
 ## 成為初級資料分析師 | 資料分析入門 SQL
 
-### 322 期上課時間調整公告
-
-- 鼓勵學員投票，2020-01-11（六）停課一次。
-- 322 期上課日期與時間調整為：
-    - 2020-01-05（日）16:30-18:30(2 hours)
-    - 2020-01-12（日）16:30-19:30(3 hours)
-    - 2020-01-18（六）16:30-18:30(2 hours)
-    - 2020-01-19（日）16:30-19:30(3 hours)
-
 ### 簡介
 
 這是[郭耀仁](https://www.facebook.com/yaojen.kuo.1)在[台灣大學資訊工程學系資訊系統訓練班](https://train.csie.ntu.edu.tw/train/)所開設的資料分析入門 SQL 假日專題班課程網頁，課程時數 10 小時。
@@ -21,10 +12,11 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 上課互動工具
 
-<https://www.sli.do/> #L919
+<https://www.sli.do/> #3238
 
 ### 繳交作業表單
 
+- [325 期假日專題班](https://forms.gle/i1vX7EMwqiHs92eCA)
 - [322 期假日專題班](https://forms.gle/mVAArtraFiwTuW7X8)
 - [321 期假日專題班](https://forms.gle/d7UHENKNwV5ESuUi8)
 - [320 期假日專題班](https://forms.gle/gi1KUebfeh5qvdq1A)
@@ -67,16 +59,11 @@ Contact me: <tonykuoyj@gmail.com>
 ### 延伸閱讀
 
 - [SQL 深入淺出](https://www.tenlong.com.tw/products/9789866840166)
-- [進擊的資料科學](https://www.books.com.tw/products/0010827812)
-- [進擊的資料科學：Medium 版](https://medium.com/datainpoint/data-science-in-action/home)
-- [進擊的資料科學：網頁版](https://www.datainpoint.com/data-science-in-action/)
-
-<!---
-- [DataCamp: SQL Courses](https://www.datacamp.com/courses/tech:sql?tap_a=5644-dce66f&tap_s=194899-1fb421)
---->
+- [DataCamp: SQL Courses](https://www.datacamp.com/courses/tech:sql?tap_a=5644-dce66f&tap_s=194899-1fb421&utm_medium=affiliate&utm_source=tonykuo)
 
 ### 近期上課錄影
 
+- [325 期假日專題班]()
 - [322 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU0-Ls5PZOo3Vtts5unCGEu)
 - [321 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUhIq8pRaHI4-k5N1DlvfEo)
 - [320 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuX1eb3gEdekyI57x8aPg38z)
