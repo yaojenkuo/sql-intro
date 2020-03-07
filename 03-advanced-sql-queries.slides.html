@@ -14815,7 +14815,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ans</span>
@@ -14831,7 +14831,7 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -14863,24 +14863,129 @@ a.anchor-link {
   <tbody>
     <tr>
       <td>0</td>
+      <td>新北市</td>
+      <td>1</td>
+      <td>宋楚瑜/余湘</td>
+      <td>112620.0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>新北市</td>
+      <td>2</td>
+      <td>韓國瑜/張善政</td>
+      <td>959631.0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>新北市</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>1393936.0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>桃園市</td>
+      <td>1</td>
+      <td>宋楚瑜/余湘</td>
+      <td>63132.0</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>桃園市</td>
+      <td>2</td>
+      <td>韓國瑜/張善政</td>
+      <td>529749.0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>桃園市</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>718260.0</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>臺中市</td>
+      <td>1</td>
+      <td>宋楚瑜/余湘</td>
+      <td>84800.0</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>臺中市</td>
+      <td>2</td>
+      <td>韓國瑜/張善政</td>
+      <td>646366.0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>臺中市</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>967304.0</td>
+    </tr>
+    <tr>
+      <td>9</td>
       <td>臺北市</td>
       <td>1</td>
       <td>宋楚瑜/余湘</td>
-      <td>301830.0</td>
+      <td>70769.0</td>
     </tr>
     <tr>
-      <td>1</td>
+      <td>10</td>
       <td>臺北市</td>
       <td>2</td>
       <td>韓國瑜/張善政</td>
-      <td>2786106.0</td>
+      <td>685830.0</td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>11</td>
       <td>臺北市</td>
       <td>3</td>
       <td>蔡英文/賴清德</td>
-      <td>4085671.0</td>
+      <td>875854.0</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>臺南市</td>
+      <td>1</td>
+      <td>宋楚瑜/余湘</td>
+      <td>41075.0</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>臺南市</td>
+      <td>2</td>
+      <td>韓國瑜/張善政</td>
+      <td>339702.0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>臺南市</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>786471.0</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>高雄市</td>
+      <td>1</td>
+      <td>宋楚瑜/余湘</td>
+      <td>55309.0</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>高雄市</td>
+      <td>2</td>
+      <td>韓國瑜/張善政</td>
+      <td>610896.0</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>高雄市</td>
+      <td>3</td>
+      <td>蔡英文/賴清德</td>
+      <td>1097621.0</td>
     </tr>
   </tbody>
 </table>
@@ -17020,9 +17125,9 @@ a.anchor-link {
        <span class="nb">number</span><span class="p">,</span>
        <span class="n">candidates</span><span class="p">,</span>
        <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
-    <span class="k">FROM</span> <span class="n">tw_election_2020</span><span class="p">.</span><span class="n">president</span>
-    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;臺北市&#39;</span><span class="p">,</span> <span class="s1">&#39;新北市&#39;</span><span class="p">,</span> <span class="s1">&#39;桃園市&#39;</span><span class="p">,</span> <span class="s1">&#39;台中市&#39;</span><span class="p">,</span> <span class="s1">&#39;台南市&#39;</span><span class="p">,</span> <span class="s1">&#39;高雄市&#39;</span><span class="p">)</span>
-    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">candidates</span>
+    <span class="k">FROM</span> <span class="n">president</span>
+    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;臺北市&#39;</span><span class="p">,</span> <span class="s1">&#39;新北市&#39;</span><span class="p">,</span> <span class="s1">&#39;桃園市&#39;</span><span class="p">,</span> <span class="s1">&#39;臺中市&#39;</span><span class="p">,</span> <span class="s1">&#39;臺南市&#39;</span><span class="p">,</span> <span class="s1">&#39;高雄市&#39;</span><span class="p">)</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">admin_area</span><span class="p">,</span> <span class="n">candidates</span>
     <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">admin_area</span><span class="p">,</span> <span class="nb">number</span><span class="p">;</span>
 </pre></div>
 
