@@ -58,7 +58,7 @@ Contact me: <tonykuoyj@gmail.com>
 - [起步走](01-getting-started.slides.html)
 - [基礎 SQL 資料庫查詢](02-basic-sql-queries.slides.html)
 - [進階 SQL 資料庫查詢](03-advanced-sql-queries.slides.html)
-- [基礎 SQL 資料庫表格處理](04-basic-CUD.slides.html)
+- [基礎 SQL 資料庫表格處理](04-basic-cud-dbbrowser.slides.html)
 - [SQL 資料庫與資料科學程式語言](05-bundling-sql-with-python-r.slides.html)
 
 ### 延伸閱讀
