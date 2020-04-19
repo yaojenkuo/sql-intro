@@ -16,6 +16,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 繳交作業表單
 
+- [326 期假日專題班](https://forms.gle/EcLTcQdL6VmYkd6y8)
 - [325 期假日專題班](https://forms.gle/i1vX7EMwqiHs92eCA)
 
 <!--
@@ -42,10 +43,10 @@ Contact me: <tonykuoyj@gmail.com>
 
 |編號|連結|分數|
 |---|----|---|
-|作業 1|[SQLZOO 練習題（一） 1~13](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)|35|
-|作業 2|[SQLZOO 練習題（二） 1~5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
-|作業 3|[SQLZOO 練習題（三） 1~8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
-|作業 4|[SQLZOO 練習題（四） 1~10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
+|作業 1|[SQLZOO 練習題（一） Q1~Q13](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)|35|
+|作業 2|[SQLZOO 練習題（二） Q1~Q5](https://sqlzoo.net/wiki/SELECT_within_SELECT_Tutorial)|35|
+|作業 3|[SQLZOO 練習題（三） Q1~Q8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
+|作業 4|[SQLZOO 練習題（四） Q1~Q10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
 
 <!---
 |作業 5(Paid)|[Intro to SQL for Data Science](http://datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
@@ -68,6 +69,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 近期上課錄影
 
+- [326 期假日專題班]()
 - [325 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWirqPBcm1o-8tVeJnY98Kt)
 - [322 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU0-Ls5PZOo3Vtts5unCGEu)
 - [321 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUhIq8pRaHI4-k5N1DlvfEo)
