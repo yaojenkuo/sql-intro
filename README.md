@@ -69,7 +69,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 近期上課錄影
 
-- [326 期假日專題班]()
+- [326 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVNPJGxeWGO7PCoQIHM2VwH)
 - [325 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWirqPBcm1o-8tVeJnY98Kt)
 - [322 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU0-Ls5PZOo3Vtts5unCGEu)
 - [321 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuUhIq8pRaHI4-k5N1DlvfEo)
