@@ -14907,7 +14907,7 @@ a.anchor-link {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>admin_area</th>
+      <th>city_county</th>
       <th>district</th>
       <th>n_office</th>
     </tr>
@@ -15057,7 +15057,7 @@ a.anchor-link {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>admin_area</th>
+      <th>city_county</th>
       <th>number</th>
       <th>candidates</th>
       <th>ttl_votes</th>
@@ -17265,12 +17265,12 @@ a.anchor-link {
 <div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2020.president 臺北市共有幾個投票所 office？臺北市大安區有幾個投票所？*/</span>
 <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="p">(</span><span class="n">office</span><span class="p">))</span> <span class="k">AS</span> <span class="n">n_office</span>
     <span class="k">FROM</span> <span class="n">tw_election_2020</span><span class="p">.</span><span class="n">president</span>
-    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="o">=</span> <span class="s1">&#39;臺北市&#39;</span><span class="p">;</span>
+    <span class="k">WHERE</span> <span class="n">city_county</span> <span class="o">=</span> <span class="s1">&#39;臺北市&#39;</span><span class="p">;</span>
 
 <span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="p">(</span><span class="n">office</span><span class="p">))</span> <span class="k">AS</span> <span class="n">n_office</span>
     <span class="k">FROM</span> <span class="n">tw_election_2020</span><span class="p">.</span><span class="n">president</span>
     <span class="k">WHERE</span> <span class="n">district</span> <span class="o">=</span> <span class="s1">&#39;大安區&#39;</span> <span class="k">AND</span>
-          <span class="n">admin_area</span> <span class="o">=</span> <span class="s1">&#39;臺北市&#39;</span><span class="p">;</span>
+          <span class="n">city_county</span> <span class="o">=</span> <span class="s1">&#39;臺北市&#39;</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -17331,11 +17331,11 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2020.president 台北市的行政區各自有幾個投票所？*/</span>
-<span class="k">SELECT</span> <span class="n">admin_area</span><span class="p">,</span>
+<span class="k">SELECT</span> <span class="n">city_county</span><span class="p">,</span>
        <span class="n">district</span><span class="p">,</span>
        <span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="p">(</span><span class="n">office</span><span class="p">))</span> <span class="k">AS</span> <span class="n">n_office</span>
     <span class="k">FROM</span> <span class="n">tw_election_2020</span><span class="p">.</span><span class="n">president</span>
-    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="o">=</span> <span class="s1">&#39;臺北市&#39;</span>
+    <span class="k">WHERE</span> <span class="n">city_county</span> <span class="o">=</span> <span class="s1">&#39;臺北市&#39;</span>
     <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">district</span><span class="p">;</span>
 </pre></div>
 
@@ -17346,14 +17346,14 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span><span class="cm">/*查詢 tw_election_2020.president 六都各組候選人的得票數分別為何？*/</span>
-<span class="k">SELECT</span> <span class="n">admin_area</span><span class="p">,</span>
+<span class="k">SELECT</span> <span class="n">city_county</span><span class="p">,</span>
        <span class="nb">number</span><span class="p">,</span>
        <span class="n">candidates</span><span class="p">,</span>
        <span class="k">SUM</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="k">AS</span> <span class="n">ttl_votes</span>
     <span class="k">FROM</span> <span class="n">tw_election_2020</span><span class="p">.</span><span class="n">president</span>
-    <span class="k">WHERE</span> <span class="n">admin_area</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;臺北市&#39;</span><span class="p">,</span> <span class="s1">&#39;新北市&#39;</span><span class="p">,</span> <span class="s1">&#39;桃園市&#39;</span><span class="p">,</span> <span class="s1">&#39;臺中市&#39;</span><span class="p">,</span> <span class="s1">&#39;臺南市&#39;</span><span class="p">,</span> <span class="s1">&#39;高雄市&#39;</span><span class="p">)</span>
-    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">admin_area</span><span class="p">,</span> <span class="n">candidates</span>
-    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">admin_area</span><span class="p">,</span> <span class="nb">number</span><span class="p">;</span>
+    <span class="k">WHERE</span> <span class="n">city_county</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;臺北市&#39;</span><span class="p">,</span> <span class="s1">&#39;新北市&#39;</span><span class="p">,</span> <span class="s1">&#39;桃園市&#39;</span><span class="p">,</span> <span class="s1">&#39;臺中市&#39;</span><span class="p">,</span> <span class="s1">&#39;臺南市&#39;</span><span class="p">,</span> <span class="s1">&#39;高雄市&#39;</span><span class="p">)</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">city_county</span><span class="p">,</span> <span class="n">candidates</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">city_county</span><span class="p">,</span> <span class="nb">number</span><span class="p">;</span>
 </pre></div>
 
 </div>
