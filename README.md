@@ -10,12 +10,18 @@ Contact me: <tonykuoyj@gmail.com>
 
 <https://www.facebook.com/groups/csietrainds/>
 
+###  WIFI: CSIE_guest
+
+- User ID: guest_Y3GSX
+- Password: 3SM73U1T
+
 ### 上課互動工具
 
 <https://www.sli.do/> #3238
 
 ### 繳交作業表單
 
+- [328 期假日專題班](https://forms.gle/Gv9V5w4x2biDvshu9)
 - [326 期假日專題班](https://forms.gle/EcLTcQdL6VmYkd6y8)
 - [325 期假日專題班](https://forms.gle/i1vX7EMwqiHs92eCA)
 
@@ -48,11 +54,6 @@ Contact me: <tonykuoyj@gmail.com>
 |作業 3|[SQLZOO 練習題（三） Q1~Q8](https://sqlzoo.net/wiki/SUM_and_COUNT)|35|
 |作業 4|[SQLZOO 練習題（四） Q1~Q10](https://sqlzoo.net/wiki/More_JOIN_operations)|35|
 
-<!---
-|作業 5(Paid)|[Intro to SQL for Data Science](http://datacamp.com/courses/intro-to-sql-for-data-science?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
-|作業 6(Paid)|[Joining Data in SQL](https://www.datacamp.com/courses/joining-data-in-postgresql?tap_a=5644-dce66f&tap_s=194899-1fb421)|70|
---->
-
 ### 課程大綱
 
 - [關於](https://yaojenkuo.io/00-about.slides.html)
@@ -62,6 +63,10 @@ Contact me: <tonykuoyj@gmail.com>
 - [基礎 SQL 資料庫表格處理](04-basic-cud-dbbrowser.slides.html)
 - [SQL 資料庫與資料科學程式語言](05-bundling-sql-with-python-r.slides.html)
 
+如何將課程投影片轉換成 .pdf 格式？
+- 在 URL 最後面加上 `?print-pdf`
+- 使用 Chrome 瀏覽器列印，另存成 pdf 格式
+
 ### 延伸閱讀
 
 - [SQL 深入淺出](https://www.tenlong.com.tw/products/9789866840166)
@@ -69,6 +74,7 @@ Contact me: <tonykuoyj@gmail.com>
 
 ### 近期上課錄影
 
+- [328 期假日專題班]()
 - [326 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuVNPJGxeWGO7PCoQIHM2VwH)
 - [325 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuWirqPBcm1o-8tVeJnY98Kt)
 - [322 期假日專題班](https://www.youtube.com/playlist?list=PLEq7iw5uOtuU0-Ls5PZOo3Vtts5unCGEu)
